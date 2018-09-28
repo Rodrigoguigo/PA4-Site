@@ -17,7 +17,7 @@ class DbBasic:
 
     def pegarEndereco(self, numeroTelefone):
         aux = db.reference('users/' + "".join(numeroTelefone)).get()
-        #print(aux)
+        # print(aux)
         if aux is None:
             return None
         else:
@@ -25,7 +25,7 @@ class DbBasic:
 
     def pegarNome(self, numeroTelefone):
         aux = db.reference('users/' + "".join(numeroTelefone)).get()
-        #print(aux)
+        # print(aux)
         if aux is None:
             return None
         else:
@@ -48,10 +48,10 @@ class DbBasic:
                 }
             )
 
-    def gravarPedido(self, ped,num):
-        #print("passei2")
+    def gravarPedido(self, ped, num):
+        # print("passei2")
         db.reference('pedidos').child(num).set(ped)
-        self.id = random.randint(0,1000)
+        self.id = random.randint(0, 1000)
 
     def getID(self):
         return self.id
