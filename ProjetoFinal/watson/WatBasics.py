@@ -12,8 +12,8 @@ class WatBaiscs:
     context = 0
     __respostas = ""
     __files = 0
-    dicpizza = {}
-    dicrefri = {}
+    escritaValorPizza = {}
+    escritaValorRefri = {}
     total = ""
 
     def __init__(self):
@@ -29,12 +29,13 @@ class WatBaiscs:
         self.__zerarContext()
         self.fire = DbBasic()
         self.total = ""
-        self.dicpizza = {}
-        self.dicrefri = {}
+        self.escritaValorPizza = {}
+        self.escritaValorRefri = {}
         self.preco = 0
         self.auxrefri = {}
         self.auxpizza = {}
         self.cende = ""
+        self.auxnum = {}
         self.fazerChamado('')
 
     def __getWorkspace(self):
@@ -53,7 +54,7 @@ class WatBaiscs:
             self.context['gravarende'] = "F"
             self.context['telefone'] = []
             self.context['ler'] = "F"
-            self.context['pedido'] = 'Pedido'+str(self.fire.getID())
+            self.context['pedido'] = 'Pedido' + str(self.fire.getID())
             self.context['obs'] = ''
 
         # elif self.context == finalnode:
@@ -76,14 +77,14 @@ class WatBaiscs:
             self.context['gravarende'] = 'F'
 
         self.linkarValores()
-        #print(self.context['telefone'])
+        # print(self.context['telefone'])
         self.buscarEndereco("".join(self.context['telefone']))
-        #print(self.context['grava'])
-        #print(self.context['ler'])
-        #print(self.context['gravarende'])
+        # print(self.context['grava'])
+        # print(self.context['ler'])
+        # print(self.context['gravarende'])
         if self.context['grava'] == 'V':
-            #print("passei1")
-            self.fire.gravarPedido(self.montarPedido(),self.context['pedido'])
+            # print("passei1")
+            self.fire.gravarPedido(self.montarPedido(), self.context['pedido'])
             self.context['grava'] = 'F'
             self.context = 0
         return ", ".join(self.__respostas['output']['text'])
@@ -91,7 +92,7 @@ class WatBaiscs:
     def adicionarContextVar(self, chave, valor):
         self.context[chave] = valor
 
-    def buscarEndereco(self, telefone):   
+    def buscarEndereco(self, telefone):
         if self.context['ler'] == "V":
             aju = self.fire.pegarEndereco(telefone)
             if aju is None:
@@ -103,7 +104,7 @@ class WatBaiscs:
                 self.context['new'] = 's'
                 self.context['cende'] = 'Bem vindo de novo ' + self.fire.pegarNome(self.context['telefone'])
                 self.context['ende'] = aju
-                self.total += 'entregar no endereço ' + aju +'?'
+                self.total += 'entregar no endereço ' + aju + '?'
                 self.context['frase'] = self.total
 
     def montarPedido(self):
@@ -114,8 +115,8 @@ class WatBaiscs:
             "forma de pagamento": aux['fpag'],
             "preco": self.calculaPreco(),
             "status": "não atendido",
-            "pizzas": self.dicpizza,
-            "refrigerante": self.dicrefri,
+            "pizzas": self.escritaValorPizza,
+            "refrigerante": self.escritaValorRefri,
             "observacao pedido": self.context['obspedido'],
             "nome": str(self.fire.pegarNome(self.context['telefone'])),
             "telefone": "".join(self.context['telefone'])
@@ -125,21 +126,18 @@ class WatBaiscs:
     def calculaPreco(self):
         pizzas = self.fire.getPizzas()
         refris = self.fire.getRefri()
-        sum = 0
+        som = 0
         for namep, names in self.auxpizza.items():
-            sum += int(self.dicpizza[names]) * int(pizzas[namep]['preco'])
-            #print(sum)
-
+            som += int(self.escritaValorPizza[names]) * int(pizzas[namep]['preco'])
+            print(som)
         for namep, names in self.auxrefri.items():
-            sum += int(self.dicrefri[names]) * int(refris[namep]['preco'])
-            #print(sum + "refri")
-        #print(sum)
-        return sum
+            som += int(self.escritaValorRefri[names]) * int(refris[namep]['preco'])
+            print(som + "refri")
+        print(som)
+        return som
+
 
     def linkarValores(self):
-        self.auxrefri = {}
-        self.auxpizza = {}
-        auxnum = []
         tocheck = []
         checkpizza = False
         checkrefri = False
@@ -153,36 +151,52 @@ class WatBaiscs:
                                                    entidade['location'][0]:entidade['location'][1]]
                 checkrefri = True
             if entidade['entity'] == 'sys-number':
-                auxnum.append(self.__respostas['input']['text'][entidade['location'][0]:entidade['location'][1]])
+                self.auxnum[entidade['value']] = self.__respostas['input']['text'][
+                                            entidade['location'][0]:entidade['location'][1]]
                 tocheck.append(int(entidade['value']))
         if checkrefri or checkpizza:
             auxfrase = self.__respostas['input']['text'].split(" ")
-            self.dicpizza = {}
-            self.dicrefri = {}
             valp = list(self.auxpizza.values())
             valr = list(self.auxrefri.values())
-            #print(valp)
-            #print(valr)
+            valnv = list(self.auxnum.values())
+            valnk = list(self.auxnum.keys())
+            # print(valp)
+            # print(valr)
             for palavra in valp:
                 ind = auxfrase.index(palavra)
+                var1 = ""
+                var2 = ""
+                var3 = ""
+                if ind - 1 >= 0:
+                    var1 = auxfrase[ind - 1]
+
+                if ind - 2 >= 0:
+                    var2 = auxfrase[ind - 2]
+
+                if ind - 3 >= 0:
+                    var3 = auxfrase[ind - 3]
                 var1 = auxfrase[ind - 1]
                 var2 = auxfrase[ind - 2]
                 var3 = auxfrase[ind - 3]
-                if var1 in auxnum:
+                if var1 in valnv:
                     valp.remove(palavra)
-                    auxnum.remove(var1)
-                    self.dicpizza[palavra] = var1
-                elif var2 in auxnum:
+                    self.escritaValorPizza[palavra] = valnk[valnv.index(var1)]
+                    valnk.remove(valnk[valnv.index(var1)])
+                    valnv.remove(var1)
+                elif var2 in valnv:
                     valp.remove(palavra)
-                    auxnum.remove(var2)
-                    self.dicpizza[palavra] = var2
-                elif var3 in auxnum:
+                    self.escritaValorPizza[palavra] = valnk[valnv.index(var2)]
+                    valnk.remove(valnk[valnv.index(var2)])
+                    valnv.remove(var2)
+                elif var3 in valnv:
                     valp.remove(palavra)
-                    auxnum.remove(var3)
-                    self.dicpizza[palavra] = var3
+                    self.escritaValorPizza[palavra] = valnk[valnv.index(var3)]
+                    valnk.remove(valnk[valnv.index(var3)])
+                    valnv.remove(var3)
                 else:
                     valp.remove(palavra)
-                    self.dicpizza[palavra] = '1'
+                    self.escritaValorPizza[palavra] = '1'
+                    tocheck.append(1)
 
             for palavra in valr:
                 ind = auxfrase.index(palavra)
@@ -198,36 +212,39 @@ class WatBaiscs:
                 if ind - 3 >= 0:
                     var3 = auxfrase[ind - 3]
 
-                if var1 in auxnum:
+                if var1 in valnv:
                     valr.remove(palavra)
-                    auxnum.remove(var1)
-                    self.dicrefri[palavra] = var1
-                elif var2 in auxnum:
+                    self.escritaValorRefri[palavra] = valnk[valnv.index(var1)]
+                    valnk.remove(valnk[valnv.index(var1)])
+                    valnv.remove(var1)
+                elif var2 in valnv:
                     valr.remove(palavra)
-                    auxnum.remove(var2)
-                    self.dicrefri[palavra] = var2
-                elif var3 in auxnum:
+                    self.escritaValorRefri[palavra] = valnk[valnv.index(var3)]
+                    valnk.remove(valnk[valnv.index(var3)])
+                    valnv.remove(var3)
+                elif var3 in valnv:
                     valr.remove(palavra)
-                    auxnum.remove(var3)
-                    self.dicrefri[palavra] = var3
+                    self.escritaValorRefri[palavra] = valnk[valnv.index(var3)]
+                    valnk.remove(valnk[valnv.index(var3)])
+                    valnv.remove(var3)
                 else:
                     valr.remove(palavra)
-                    self.dicrefri[palavra] = '1'
-                    tocheck.append(1)
+                    self.escritaValorRefri[palavra] = '1'
+
             if self.total == "":
                 if sum(tocheck) > 1:
                     self.total += "então são"
                 else:
                     self.total += "então é"
-            lp = list(self.dicpizza.items())
-            lr = list(self.dicrefri.items())
+            lp = list(self.escritaValorPizza.items())
+            lr = list(self.escritaValorRefri.items())
             for comp in lp:
                 self.total += " " + str(comp[1]) + " " + comp[0]
                 if lp.index(comp) == len(lp) - 1:
                     self.total += " e "
                 else:
                     self.total += ","
-            if self.dicrefri != {}:
+            if self.escritaValorRefri != {}:
                 self.total += "junto com"
 
                 for comp in lr:
