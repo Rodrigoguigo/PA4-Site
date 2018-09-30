@@ -2,6 +2,8 @@ var head = document.getElementsByClassName("msg_head");
 var body = document.getElementsByClassName("msg_wraper");
 var text = document.getElementById("msg_input");
 var chat = document.getElementById("msg_body");
+var csrftoken = getCookie('csrftoken');
+
 
 for (i = 0; i < head.length; i++) {
     head[i].addEventListener("click", function() {
@@ -65,8 +67,6 @@ function getCookie(name){
     }
     return cookieValue;
 }
-
-var csrftoken = getCookie('csrftoken');
 
 function csrfSafeMethod(method) {
     // these HTTP methods do not require CSRF protection

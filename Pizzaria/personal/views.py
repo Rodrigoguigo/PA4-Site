@@ -9,10 +9,14 @@ DB = DbBasic()
 
 def index(request):
     global WATSON, DB
+    WATSON = WatBasics()
     context = {
         'pizzas' : DB.getPizzas()
     }
     return render(request, 'personal/home.html', context)
+
+def login(request):
+    return render(request, 'personal/login.html')
 
 def admin(request):
     return render(request, 'personal/admin.html')

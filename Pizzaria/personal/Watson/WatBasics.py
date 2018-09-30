@@ -36,7 +36,6 @@ class WatBasics:
         self.originalEscritaPizza = {}
         self.cende = ""
         self.auxnum = {}
-        self.fazerChamado('')
 
     def __getWorkspace(self):
         self.__workspace = self.conversation.get_workspace(workspace_id=self.__workspace_id, export=True)

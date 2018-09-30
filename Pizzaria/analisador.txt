@@ -14798,4 +14798,628 @@
     "pedido": "Pedido672",
     "obs": ""
   }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "2a30757e-0126-4c95-9819-60b5d8883090",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido127",
+    "obs": ""
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {
+    "text": ""
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Eu n\u00e3o entendi. Voc\u00ea pode tentar reformular a frase."
+      }
+    ],
+    "text": [
+      "Eu n\u00e3o entendi. Voc\u00ea pode tentar reformular a frase."
+    ],
+    "nodes_visited": [
+      "Em outros casos"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "2a30757e-0126-4c95-9819-60b5d8883090",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "Em outros casos": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_request_counter": 2,
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "telefone": [],
+    "grava": "F",
+    "ler": "F",
+    "obs": "",
+    "gravarende": "F",
+    "pedido": "Pedido127"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {
+    "text": ""
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Voc\u00ea pode reformular sua afirma\u00e7\u00e3o? Eu n\u00e3o estou entendendo."
+      }
+    ],
+    "text": [
+      "Voc\u00ea pode reformular sua afirma\u00e7\u00e3o? Eu n\u00e3o estou entendendo."
+    ],
+    "nodes_visited": [
+      "Em outros casos"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "2a30757e-0126-4c95-9819-60b5d8883090",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 3,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "Em outros casos": {
+          "0": [
+            1
+          ]
+        }
+      },
+      "dialog_request_counter": 3,
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "telefone": [],
+    "grava": "F",
+    "ler": "F",
+    "obs": "",
+    "gravarende": "F",
+    "pedido": "Pedido127"
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 0.9381540775299073
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        6,
+        9
+      ],
+      "value": "1",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 1
+      }
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        19,
+        28
+      ],
+      "value": "Calabresa",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "Quero uma pizza de calabresa"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bebidas?"
+      }
+    ],
+    "text": [
+      "Bebidas?"
+    ],
+    "nodes_visited": [
+      "node_2_1536694712100",
+      "handler_4_1536694807221",
+      "handler_8_1536694877396",
+      "slot_6_1536694877396"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "2a30757e-0126-4c95-9819-60b5d8883090",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_6_1536694877396",
+          "state": "in_progress"
+        }
+      ],
+      "dialog_turn_counter": 4,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "Em outros casos": {
+          "0": [
+            1
+          ]
+        }
+      },
+      "dialog_request_counter": 4
+    },
+    "telefone": [],
+    "grava": "F",
+    "ler": "F",
+    "obs": "",
+    "gravarende": "F",
+    "pedido": "Pedido127",
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "3e7c44da-da04-4163-aa7c-53d0a24ab40e",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido214",
+    "obs": ""
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "66a74647-f86e-462a-85f4-db696d909d2f",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido535",
+    "obs": ""
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "eb4b935a-bad0-4bcf-888d-e5ddab492173",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido838",
+    "obs": ""
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "300842b8-8ed0-4d12-aa52-b8f61c707de1",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido42",
+    "obs": ""
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "fb5afd82-94ce-402f-9ed0-b5af4cc0e5cf",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido768",
+    "obs": ""
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {
+    "text": ""
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Eu n\u00e3o entendi. Voc\u00ea pode tentar reformular a frase."
+      }
+    ],
+    "text": [
+      "Eu n\u00e3o entendi. Voc\u00ea pode tentar reformular a frase."
+    ],
+    "nodes_visited": [
+      "Em outros casos"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "fb5afd82-94ce-402f-9ed0-b5af4cc0e5cf",
+    "system": {
+      "dialog_request_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "Em outros casos": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 2,
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "ler": "F",
+    "obs": "",
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "pedido": "Pedido768"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {
+    "text": ""
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Voc\u00ea pode reformular sua afirma\u00e7\u00e3o? Eu n\u00e3o estou entendendo."
+      }
+    ],
+    "text": [
+      "Voc\u00ea pode reformular sua afirma\u00e7\u00e3o? Eu n\u00e3o estou entendendo."
+    ],
+    "nodes_visited": [
+      "Em outros casos"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "fb5afd82-94ce-402f-9ed0-b5af4cc0e5cf",
+    "system": {
+      "dialog_request_counter": 3,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "Em outros casos": {
+          "0": [
+            1
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 3,
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "ler": "F",
+    "obs": "",
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "pedido": "Pedido768"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "9ef7a57a-ee72-457e-a487-3dbbdcca2f25",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido371",
+    "obs": ""
+  }
 }
