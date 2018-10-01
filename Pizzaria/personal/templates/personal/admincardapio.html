@@ -1,33 +1,19 @@
+{% extends 'personal/adminHeader.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Compizza</title>
-        {% load staticfiles %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/stylesheetadmin.css' %}">
-    </head>
-<body>
-    <div id="header">
-		<ul>
-            <li><a href="/admin">Pedidos</a></li>
-			<li> <a href="/admin/cardapio">Editar Cardápio </a> </li>
-            <li><a href="/admin/add">Adicionar Pizza</a></li>
-		</ul>
-	</div>
-    <div class="grid-container">
-        {% for chave, pizza in pizzas.items %}
-            <div class="grid-item">
-                <img src="https://cache.dominos.com/olo/5_40_3/assets/build/market/BR/_pt/images/img/products/larges/S_PIZQU.jpg" alt="3 Queijos Pizza - Mussarela, requeijão e parmesão ralado." width="200">
-                <div>
-                    <p class="ctitle">{{ pizza.nome }}</p>
-                    <p class="ctext">{{ pizza.descricao }}</p>
-                    <p class="cpreco">R$ {{ pizza.preco|floatformat:2 }}</p>
-                    <button>Editar</button>
-                    <button>Remover</button>
-                </div>
+
+{% block content %}
+<div class="grid-container">
+    {% for chave, pizza in pizzas.items %}
+        <div class="grid-item">
+            <img src="{{ pizza.imagem }}" width="200">
+            <div>
+                <p class="ctitle">{{ pizza.nome }}</p>
+                <p class="ctext">{{ pizza.descricao }}</p>
+                <p class="cpreco">R$ {{ pizza.preco|floatformat:2 }}</p>
+                <button>Editar</button>
+                <button>Remover</button>
             </div>
-        {% endfor %}
-    </div>
-</body>
-</html>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

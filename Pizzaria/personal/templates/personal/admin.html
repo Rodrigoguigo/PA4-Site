@@ -1,38 +1,33 @@
+{% extends 'personal/adminHeader.html' %}
+{% load tags_extras %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Compizza</title>
-        {% load staticfiles %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/stylesheetadmin.css' %}">
-    </head>
-<body>
-    <div id="header">
-		<ul>
-            <li><a href="/admin">Pedidos</a></li>
-			<li> <a href="/admin/cardapio">Editar Cardápio </a> </li>
-            <li><a href="/admin/add">Adicionar Pizza</a></li>
-		</ul>
-	</div>
 
-    <div class="status">
-        <p><b>Pedidos abertos: </b></p>
-        <p><b>Quantidade de pizzas vendidas hoje: </b></p>
-        <p><b>Lucro do dia: </b></p>
-    </div>
+{% block content %}
+
+<div class="status">
+    <p><b>Pedidos abertos: </b></p>
+    <p><b>Quantidade de pizzas vendidas hoje: </b></p>
+    <p><b>Lucro do dia: </b></p>
+</div>
 
 
-    <div class="grid-container">
+<div class="grid-container">
+    {% for chave, pedido in pedidos.items %}
         <div class="grid-item">
-            <div>
-                <p>adsfdsa</p>
-                <p>dsaf</p>
-                <p>adsfds</p>
-                <button>Completo</button>
-            </div>
+            {% if "pizzas"|in:pedido %}
+            <p>Pizzas: {{ pedido.pizzas.values|join:", " }}</p>
+            {% endif %}
+            {% if "refrigerante"|in:pedido %}
+            <p>Refrigerantes: {{ pedido.refrigerante|join:", " }}</p>
+            {% endif %}
+            <p>Observações: {{ pedido.observacao_pedido }}</p>
+            <p>Preço: {{ pedido.preco }}</p>
+            <p>Endereço: {{ pedido.endereco }}</p>
+            <p>Telefone: {{ pedido.telefone }}</p>
+            <p>Status: {{ pedido.status }}</p>
+            <button>Completo</button>
         </div>
-    </div>
+    {% endfor %}
+</div>
 
-</body>
-</html>
+{% endblock %}

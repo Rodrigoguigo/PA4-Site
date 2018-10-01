@@ -4,7 +4,6 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
 
-
 class DbBasic:
 
     __cred = credentials.Certificate('personal\\firebase\mucha-pizza-firebase-adminsdk-lrard-794e3a2b61.json')
@@ -61,3 +60,6 @@ class DbBasic:
 
     def getRefri(self):
         return db.reference('refrigerante').get()
+
+    def getPedidos(self):
+        return db.reference('pedidos').get()

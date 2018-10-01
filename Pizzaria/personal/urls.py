@@ -21,7 +21,7 @@ from django.conf.urls import url
 urlpatterns = [
     path('', views.index, name='index'),
     path('admin/login', views.login, name='login'),
-    path('admin/', views.admin, name='admin'),
+    path('admin/', views.admin, name='home'),
     path('admin/cardapio', views.adminCardapio, name='adminCardapio'),
     path('admin/add', views.addPizza, name='addPizza'),
     path('sendMessage', views.sendMessage, name='message')

@@ -15422,4 +15422,50 @@
     "pedido": "Pedido371",
     "obs": ""
   }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "87805f0f-f4f6-4337-b667-04736317750e",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido533",
+    "obs": ""
+  }
 }

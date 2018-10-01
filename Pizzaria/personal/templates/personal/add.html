@@ -1,38 +1,25 @@
+{% extends 'personal/adminHeader.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Compizza</title>
-        {% load staticfiles %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/stylesheetadmin.css' %}">
-    </head>
-<body>
-    <div id="header">
-		<ul>
-            <li><a href="/admin">Pedidos</a></li>
-			<li> <a href="/admin/cardapio">Editar Cardápio </a> </li>
-            <li><a href="/admin/add">Adicionar Pizza</a></li>
-		</ul>
-	</div>
-        <form action="" method="post" class="addpizza">
-            <div class="container">
-                <label for="imgadd"><b>Imagem:</b></label>
-                <input type="url" placeholder="Digite a url da imagem" name="imgadd" required>
 
-                <label for="nameadd"><b>Nome da Pizza:</b></label>
-                <input type="text" placeholder="Digite o nome da pizza" name="nameadd" required>
+{% block content %}
+<div>
+    <form action="{% url 'addPizza' %}" method="post" class="addpizza">{% csrf_token %}
+        <div class="container">
+            <label for="img"><b>Imagem:</b></label>
+            <input type="url" placeholder="Digite a url da imagem" name="img" required>
 
-                <label for="descadd"><b>Descrição</b></label>
-                <input type="text" placeholder="Digite a descrição da pizza" name="descadd" required>
+            <label for="nome"><b>Nome da Pizza:</b></label>
+            <input type="text" placeholder="Digite o nome da pizza" name="nome" required>
 
-                <label for="priceadd"><b>Nome da Pizza:</b></label>
-                <input type="number" placeholder="Digite o preço" name="piceadd" required>
+            <label for="desc"><b>Descrição</b></label>
+            <input type="text" placeholder="Digite a descrição da pizza" name="desc" required>
 
-                <button type="submit">Adicionar</button>
-            </div>
-        </form>
-    </div>
+            <label for="preco"><b>Preço da Pizza:</b></label>
+            <input type="number" placeholder="Digite o preço" name="preco" required>
 
-</body>
-</html>
+            <button type="submit">Adicionar</button>
+        </div>
+    </form>
+    <h2 class='message'>{{ result }}</h2>
+</div>
+{% endblock %}

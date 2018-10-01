@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Compizza</title>
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/stylesheetadmin.css' %}">
+    </head>
+    <body>
+        <div id="header">
+            <ul>
+                <li><a href="{% url 'home' %}">Pedidos</a></li>
+                <li> <a href="{% url 'adminCardapio' %}">Editar Cardápio </a> </li>
+                <li><a href="{% url 'addPizza' %}">Adicionar Pizza</a></li>
+            </ul>
+        </div>
+
+        {% block content %}
+        {% endblock %}
+
+    </body>
+</html>

@@ -30,7 +30,7 @@
 				<div class="msg_wraper">
 					<div id="msg_body" class="msg_body"></div>
 					<div class="msg_footer">
-						<form id="message" name="message" action="{% url 'message' %}" method="POST">
+						<form id="message" name="message" action="{% url 'message' %}" method="POST"> {% csrf_token %}
 							<textarea id="msg_input" name="msg_input" class="msg_input" placeholder="Digite aqui" rows="4"></textarea>
 						</form>
 					</div>

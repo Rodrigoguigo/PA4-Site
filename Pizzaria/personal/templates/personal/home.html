@@ -11,9 +11,9 @@
         <div class="grid-container">
                 {% for chave, pizza in pizzas.items %}
                     <div class="grid-item">
-                        <img src="https://cache.dominos.com/olo/5_40_3/assets/build/market/BR/_pt/images/img/products/larges/S_PIZQU.jpg" alt="3 Queijos Pizza - Mussarela, requeijão e parmesão ralado." width="200">
+                        <img src="{{ pizza.imagem }}" width="200">
                         <div>
-                            <p class="ctitle">{{ pizza.nome }}</p>
+                            <p class="ctitle">{{ chave }}</p>
                             <p class="ctext">{{ pizza.descricao }}</p>
                             <p class="cpreco">R$ {{ pizza.preco|floatformat:2 }}</p>
                         </div>

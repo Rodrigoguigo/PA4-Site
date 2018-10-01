@@ -9,7 +9,7 @@ form {
 }
 
 /* Full-width inputs */
-input[type=text], input[type=password], input[type=url], input[type=number] {
+input[type=text], input[type=email], input[type=password], input[type=url], input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -39,8 +39,14 @@ button:hover {
     padding: 16px;
 }
 
+.error {
+    text-align: center;
+    color: red;
+}
 
-
+.message{
+    text-align: center;
+}
 
 
 /*Admin Page*/
