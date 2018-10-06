@@ -61,32 +61,33 @@
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="32" />
-          <entry key="py" value="899" />
+          <entry key="py" value="1018" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="32" />
-          <entry key="Python" value="899" />
+          <entry key="Python" value="1018" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="py" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="Python" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -106,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/testes.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -115,7 +116,7 @@
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -123,8 +124,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/watson/WatBasics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1531">
-              <caret line="136" column="9" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
+            <state relative-caret-position="2746">
+              <caret line="274" column="54" selection-start-line="274" selection-start-column="54" selection-end-line="274" selection-end-column="54" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -135,7 +136,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/firebase/DbBasic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="45">
               <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -157,13 +158,14 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>total</find>
       <find>dicpizza</find>
       <find>dicrefri</find>
       <find>grava</find>
       <find>V</find>
       <find>pegarEndereco</find>
       <find>auxnum</find>
+      <find>total</find>
+      <find>pegarEn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -172,18 +174,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/analisador.txt" />
         <option value="$PROJECT_DIR$/testes.py" />
         <option value="$PROJECT_DIR$/firebase/DbBasic.py" />
+        <option value="$PROJECT_DIR$/analisador.txt" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/watson/WatBasics.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-128" />
-    <option name="y" value="162" />
-    <option name="width" value="1843" />
+    <option name="x" value="87" />
+    <option name="y" value="90" />
+    <option name="width" value="1833" />
     <option name="height" value="789" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -335,14 +337,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.24043716" />
       <window_info id="Structure" order="1" sideWeight="0.5016129" side_tool="true" weight="0.24043716" />
       <window_info id="Favorites" order="2" sideWeight="0.5015625" side_tool="true" weight="0.2409067" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32901832" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49836066" visible="true" weight="0.28" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49836066" visible="true" weight="0.48864865" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49836066" weight="0.39891893" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -383,43 +384,26 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/watson/WatBasics.py</url>
-          <line>133</line>
+          <line>136</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/watson/WatBasics.py</url>
-          <line>248</line>
+          <line>251</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/watson/WatBasics.py</url>
-          <line>175</line>
+          <line>178</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/analisador.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/firebase/DbBasic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="45">
           <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -429,10 +413,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/firebase_admin/db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="261" selection-start-line="261" selection-end-line="261" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analisador.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/watson/WatBasics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1531">
-          <caret line="136" column="9" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
+        <state relative-caret-position="2746">
+          <caret line="274" column="54" selection-start-line="274" selection-start-column="54" selection-end-line="274" selection-end-column="54" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
