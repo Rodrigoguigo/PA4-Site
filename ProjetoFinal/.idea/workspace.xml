@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="182bf0b6-b9f6-4f21-8621-ae75df82734f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ComPizza/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ComPizza/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ComPizza/watson/WatBasics.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ComPizza/watson/WatBasics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analisador.txt" beforeDir="false" afterPath="$PROJECT_DIR$/analisador.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase/DbBasic.py" beforeDir="false" afterPath="$PROJECT_DIR$/firebase/DbBasic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/watson/WatBasics.py" beforeDir="false" afterPath="$PROJECT_DIR$/watson/WatBasics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../firebase/DbBasic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../watson/WatBasics.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,22 +59,24 @@
     <session id="1663009782">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="32" />
-          <entry key="py" value="853" />
+          <entry key="py" value="899" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="32" />
-          <entry key="Python" value="853" />
+          <entry key="Python" value="899" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -103,9 +99,7 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analisador.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-191740" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -117,20 +111,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/watson/WatBasics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
+            <state relative-caret-position="-1531">
+              <caret line="136" column="9" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -141,7 +135,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/firebase/DbBasic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-330">
+            <state relative-caret-position="120">
               <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -180,9 +174,9 @@
       <list>
         <option value="$PROJECT_DIR$/analisador.txt" />
         <option value="$PROJECT_DIR$/testes.py" />
-        <option value="$PROJECT_DIR$/watson/WatBasics.py" />
         <option value="$PROJECT_DIR$/firebase/DbBasic.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/watson/WatBasics.py" />
       </list>
     </option>
   </component>
@@ -215,7 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,6 +247,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -341,13 +335,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.24043716" />
       <window_info id="Structure" order="1" sideWeight="0.5016129" side_tool="true" weight="0.24043716" />
       <window_info id="Favorites" order="2" sideWeight="0.5015625" side_tool="true" weight="0.2409067" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32901832" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49836066" visible="true" weight="0.32864866" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49836066" visible="true" weight="0.28" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49836066" weight="0.39891893" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -388,23 +383,33 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/watson/WatBasics.py</url>
-          <line>132</line>
+          <line>133</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/watson/WatBasics.py</url>
-          <line>247</line>
+          <line>248</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/watson/WatBasics.py</url>
-          <line>174</line>
+          <line>175</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/analisador.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -412,14 +417,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/analisador.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-191740" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/firebase/DbBasic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
+        <state relative-caret-position="120">
           <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -431,18 +431,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/watson/WatBasics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
+        <state relative-caret-position="-1531">
+          <caret line="136" column="9" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

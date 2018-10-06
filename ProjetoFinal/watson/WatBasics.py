@@ -104,7 +104,7 @@ class WatBaiscs:
                 self.context['new'] = 's'
                 self.context['cende'] = 'Bem vindo de novo ' + self.fire.pegarNome(self.context['telefone'])
                 self.context['ende'] = aju
-                self.total += 'entregar no endereço ' + aju + '?'
+                self.total += 'entregar no endereço ' + aju + 'pelo preço de ' + str(self.calculaPreco()) + ' reais?'
                 self.context['frase'] = self.total
 
     def montarPedido(self):
@@ -119,7 +119,8 @@ class WatBaiscs:
             "refrigerante": self.escritaValorRefri,
             "observacao pedido": self.context['obspedido'],
             "nome": str(self.fire.pegarNome(self.context['telefone'])),
-            "telefone": "".join(self.context['telefone'])
+            "telefone": "".join(self.context['telefone']),
+
         }
         return pedido
 
@@ -129,11 +130,11 @@ class WatBaiscs:
         som = 0
         for namep, names in self.originalEscritaPizza.items():
             som += int(self.escritaValorPizza[names]) * int(pizzas[namep]['preco'])
-            print(som)
+            #print(som)
         for namep, names in self.originalEscritaRefri.items():
             som += int(self.escritaValorRefri[names]) * int(refris[namep]['preco'])
-            print(str(som) + "refri")
-        print(str(som))
+            #print(str(som) + "refri")
+        #print(str(som))
         return som
 
     def linkarValores(self):
@@ -170,7 +171,7 @@ class WatBaiscs:
                 self.originalEscritaPizza[item[0]] = item[1]
             for item in list(auxrefri.items()):
                 self.originalEscritaRefri[item[0]] = item[1]
-            while valp !=[]:
+            while valp != []:
                 for palavra in valp:
                     ind = auxfrase.index(palavra)
                     var1 = ""
