@@ -33,7 +33,7 @@ def login(request):
     return render(request, 'personal/login.html', {'error':True})
 
 def admin(request):
-    global DB
+    global DB, USER
     if not USER.isUserLoggedIn():
         return redirect('login')
     pedidos = DB.getPedidos()
@@ -52,19 +52,32 @@ def admin(request):
     return render(request, 'personal/admin.html', context)
 
 def adminCardapio(request):
-    global DB
+    global DB, USER
     if not USER.isUserLoggedIn():
         return redirect('login')
+
+    if 'remove' in request.POST:
+        USER.deletePizza(request.POST['remove'])
+    elif 'edit' in request.POST:
+        USER.updatePizza(request.POST['edit'], {
+            'nome':request.POST['edit'],
+            'imagem':request.POST['img'],
+            'descricao':request.POST['desc'],
+            'preco':request.POST['preco']
+        })
+
     context = {
         'pizzas':DB.getPizzas()
     }
+
     return render(request, 'personal/admincardapio.html', context)
 
 def addPizza(request):
+    global USER
     if USER.isUserLoggedIn():
         context = {}
 
-        if 'nome'in request.POST:
+        if 'nome' in request.POST:
             values = {
                 'nome':request.POST['nome'],
                 'descricao':request.POST['desc'],
@@ -84,3 +97,30 @@ def sendMessage(request):
         'response' : WATSON.fazerChamado(message)
     }
     return HttpResponse(json.dumps(data), content_type='application/json')
+
+def checkUpdates(request):
+    global DB
+    context = ''
+
+    if 'pedidos' in request.POST['message']:
+        pedidos = DB.getPedidos()
+        for chave, pedido in pedidos.items():
+            if 'pizzas' in pedido:
+                for chave_pizza in pedido['pizzas']:
+                    pedido['pizzas'][chave_pizza] = str(pedido['pizzas'][chave_pizza]) + " " + chave_pizza
+                pedido['pizzas'] = ', '.join(x for x in pedido['pizzas'].values())
+            if 'refrigerante' in pedido:
+                for chave_refri in pedido['refrigerante']:
+                    pedido['refrigerante'][chave_refri] = str(pedido['refrigerante'][chave_refri]) + " " + chave_refri
+                pedido['refrigerante'] = ', '.join(x for x in pedido['refrigerante'].values())
+
+        context = {
+            'pedidos' : pedidos
+        }
+    elif 'pizzas' in request.POST['message']:
+        pizzas = DB.getPizzas()
+        context = {
+            'pizzas' : pizzas
+        }
+
+    return HttpResponse(json.dumps(context), content_type='application/json')

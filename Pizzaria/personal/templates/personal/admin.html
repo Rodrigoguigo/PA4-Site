@@ -10,24 +10,52 @@
     <p><b>Lucro do dia: </b></p>
 </div>
 
+<input type="hidden" id="url" data-url="{% url 'checkUpdates' %}"/>{% csrf_token %}
 
-<div class="grid-container">
+<div class="grid-container container">
+    <div id="listaPedidos" class="row mx-4 my-3">
     {% for chave, pedido in pedidos.items %}
-        <div class="grid-item">
-            {% if "pizzas"|in:pedido %}
-            <p>Pizzas: {{ pedido.pizzas.values|join:", " }}</p>
-            {% endif %}
-            {% if "refrigerante"|in:pedido %}
-            <p>Refrigerantes: {{ pedido.refrigerante|join:", " }}</p>
-            {% endif %}
-            <p>Observações: {{ pedido.observacao_pedido }}</p>
+        <div class="grid-item pedidos-item col-md-6 col-sm-12">
+            <p>Pizzas: {% if "pizzas"|in:pedido %}
+                {{ pedido.pizzas.values|join:", " }}
+            {% endif %}</p>
+            <p>Refrigerantes: {% if "refrigerante"|in:pedido %} 
+                {{ pedido.refrigerante.values|join:", " }}
+            {% endif %}</p>
             <p>Preço: {{ pedido.preco }}</p>
             <p>Endereço: {{ pedido.endereco }}</p>
             <p>Telefone: {{ pedido.telefone }}</p>
             <p>Status: {{ pedido.status }}</p>
-            <button>Completo</button>
+            <p>Observações: {{ pedido.observacao_pedido }}</p>
+            <button class="btncont">Completo</button>
         </div>
     {% endfor %}
+    </div>
 </div>
+<script src="{% static '/js/checkUpdates.js' %}"></script>
+<script type="text/javascript">
+    function getUpdates(result){
+        updatedHtml = ""
+        for(key in result['pedidos']){
+            updatedHtml += "<div class='grid-item pedidos-item col-md-6 col-sm-12'>\n\t" +
+                           "<p>Pizzas: ";
+            if(result['pedidos'][key]['pizzas']!=undefined)
+                updatedHtml += result['pedidos'][key]['pizzas'];
+            updatedHtml += "</p>\n\t<p>Refrigerantes: ";
+            if(result['pedidos'][key]['refrigerante']!=undefined)
+                updatedHtml += result['pedidos'][key]['refrigerante'];
+            updatedHtml += "</p>\n\t<p>Preço: " + result['pedidos'][key]['preco'] + "</p>\n\t" +
+            "<p>Endereço: " + result['pedidos'][key]['endereco'] + "</p>\n\t" +
+            "<p>Telefone: " + result['pedidos'][key]['telefone'] + "</p>\n\t" +
+            "<p>Status: " + result['pedidos'][key]['status'] + "</p>\n\t" +
+            "<p>Observações: " + result['pedidos'][key]['observacao pedido'] + "</p>\n\t" +
+            "<button class='btncont'>Completo</button>\n</div>\n";
+        };
+
+        $("#listaPedidos").html(updatedHtml);
+    }
+
+    setInterval(function() { checkUpdates("pedidos", getUpdates) }, 5000);
+</script>
 
 {% endblock %}

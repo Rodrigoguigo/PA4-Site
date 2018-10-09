@@ -24,5 +24,6 @@ urlpatterns = [
     path('admin/', views.admin, name='home'),
     path('admin/cardapio', views.adminCardapio, name='adminCardapio'),
     path('admin/add', views.addPizza, name='addPizza'),
-    path('sendMessage', views.sendMessage, name='message')
+    path('sendMessage', views.sendMessage, name='message'),
+    path('checkUpdates', views.checkUpdates, name='checkUpdates')
 ]

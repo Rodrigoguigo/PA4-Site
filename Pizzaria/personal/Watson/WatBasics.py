@@ -86,6 +86,8 @@ class WatBasics:
             self.fire.gravarPedido(self.montarPedido(), self.context['pedido'])
             self.context['grava'] = 'F'
             self.context = 0
+
+        print(self.__respostas)
         return ", ".join(self.__respostas['output']['text'])
 
     def adicionarContextVar(self, chave, valor):
