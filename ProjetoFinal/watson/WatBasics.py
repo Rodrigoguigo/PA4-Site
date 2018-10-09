@@ -2,6 +2,8 @@ from __future__ import print_function
 import json
 from watson_developer_cloud import ConversationV1
 
+from datetime import datetime
+
 from firebase.DbBasic import DbBasic
 
 
@@ -104,14 +106,14 @@ class WatBaiscs:
                 self.context['new'] = 's'
                 self.context['cende'] = 'Bem vindo de novo ' + self.fire.pegarNome(self.context['telefone'])
                 self.context['ende'] = aju
-                self.total += 'entregar no endereço ' + aju + 'pelo preço de ' + str(self.calculaPreco()) + ' reais?'
+                self.total += 'entregar no endereço ' + aju + 'pelo preço de ' + str(self.calculaPreco()) + ' reais'
                 self.context['frase'] = self.total
 
     def montarPedido(self):
         aux = self.context
         pedido = {
             "endereco": aux['ende'],
-            "observacao pagamento": aux['obs'],
+            "observacao pagamento": aux['tipoc'],
             "forma de pagamento": aux['fpag'],
             "preco": self.calculaPreco(),
             "status": "não atendido",
@@ -120,6 +122,7 @@ class WatBaiscs:
             "observacao pedido": self.context['obspedido'],
             "nome": str(self.fire.pegarNome(self.context['telefone'])),
             "telefone": "".join(self.context['telefone']),
+            "Data pedido": str(datetime.now())
 
         }
         return pedido
@@ -269,5 +272,5 @@ class WatBaiscs:
                         self.total += " e "
                     else:
                         self.total += ","
-
+            self.context['preco']= self.calculaPreco()
             self.context['frase'] = self.total
