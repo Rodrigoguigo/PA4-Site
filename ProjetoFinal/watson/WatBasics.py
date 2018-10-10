@@ -58,6 +58,7 @@ class WatBaiscs:
             self.context['ler'] = "F"
             self.context['pedido'] = 'Pedido' + str(self.fire.getID())
             self.context['obs'] = ''
+            self.context['zerar'] = 'F'
 
         # elif self.context == finalnode:
 
@@ -103,11 +104,12 @@ class WatBaiscs:
 
 
             else:
+                nome = self.fire.pegarNome(self.context['telefone'])
                 self.context['new'] = 's'
-                self.context['cende'] = 'Bem vindo de novo ' + self.fire.pegarNome(self.context['telefone'])
+                self.context['cende'] = 'Bem vindo de novo ' + nome
+                self.context['nome'] = nome
                 self.context['ende'] = aju
-                self.total += 'entregar no endereço ' + aju + 'pelo preço de ' + str(self.calculaPreco()) + ' reais'
-                self.context['frase'] = self.total
+
 
     def montarPedido(self):
         aux = self.context
@@ -133,11 +135,11 @@ class WatBaiscs:
         som = 0
         for namep, names in self.originalEscritaPizza.items():
             som += int(self.escritaValorPizza[names]) * int(pizzas[namep]['preco'])
-            #print(som)
+            # print(som)
         for namep, names in self.originalEscritaRefri.items():
             som += int(self.escritaValorRefri[names]) * int(refris[namep]['preco'])
-            #print(str(som) + "refri")
-        #print(str(som))
+            # print(str(som) + "refri")
+        # print(str(som))
         return som
 
     def linkarValores(self):
@@ -246,9 +248,9 @@ class WatBaiscs:
 
             if self.total == "":
                 if sum(tocheck) > 1:
-                    self.total += "então são"
+                    self.total += " são"
                 else:
-                    self.total += "então é"
+                    self.total += " é"
             lp = list(dicPizza.items())
             lr = list(dicRefri.items())
 
@@ -272,5 +274,5 @@ class WatBaiscs:
                         self.total += " e "
                     else:
                         self.total += ","
-            self.context['preco']= self.calculaPreco()
+            self.context['preco'] = self.calculaPreco()
             self.context['frase'] = self.total
