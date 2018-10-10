@@ -11,51 +11,32 @@
 </div>
 
 <input type="hidden" id="url" data-url="{% url 'checkUpdates' %}"/>{% csrf_token %}
+<input type="hidden" id="orderUrl" data-url="{% url 'completeOrder' %}"/>
 
 <div class="grid-container container">
     <div id="listaPedidos" class="row mx-4 my-3">
-    {% for chave, pedido in pedidos.items %}
+    {% for pedido in pedidos %}
         <div class="grid-item pedidos-item col-md-6 col-sm-12">
-            <p>Pizzas: {% if "pizzas"|in:pedido %}
-                {{ pedido.pizzas.values|join:", " }}
+            <p>Pizzas: {% if "pizzas"|in:pedido.1 %}
+                {{ pedido.1.pizzas.values|join:", " }}
             {% endif %}</p>
-            <p>Refrigerantes: {% if "refrigerante"|in:pedido %} 
-                {{ pedido.refrigerante.values|join:", " }}
+            <p>Refrigerantes: {% if "refrigerante"|in:pedido.1 %} 
+                {{ pedido.1.refrigerante.values|join:", " }}
             {% endif %}</p>
-            <p>Preço: {{ pedido.preco }}</p>
-            <p>Endereço: {{ pedido.endereco }}</p>
-            <p>Telefone: {{ pedido.telefone }}</p>
-            <p>Status: {{ pedido.status }}</p>
-            <p>Observações: {{ pedido.observacao_pedido }}</p>
-            <button class="btncont">Completo</button>
+            <p>Preço: {{ pedido.1.preco }}</p>
+            <p>Endereço: {{ pedido.1.endereco }}</p>
+            <p>Telefone: {{ pedido.1.telefone }}</p>
+            <p>Status: {{ pedido.1.status }}</p>
+            <p>Observações: {{ pedido.1.observacao_pedido }}</p>
+            <form name="complete" style="border-style: none; margin : 0%;" action="{% url 'completeOrder' %}" method="POST">{% csrf_token %}
+                <button class="btncont btn btn-info" type="submit" name="pedido" value="{{ pedido.0 }}">Completo</button>
+            </form>
         </div>
     {% endfor %}
     </div>
 </div>
 <script src="{% static '/js/checkUpdates.js' %}"></script>
-<script type="text/javascript">
-    function getUpdates(result){
-        updatedHtml = ""
-        for(key in result['pedidos']){
-            updatedHtml += "<div class='grid-item pedidos-item col-md-6 col-sm-12'>\n\t" +
-                           "<p>Pizzas: ";
-            if(result['pedidos'][key]['pizzas']!=undefined)
-                updatedHtml += result['pedidos'][key]['pizzas'];
-            updatedHtml += "</p>\n\t<p>Refrigerantes: ";
-            if(result['pedidos'][key]['refrigerante']!=undefined)
-                updatedHtml += result['pedidos'][key]['refrigerante'];
-            updatedHtml += "</p>\n\t<p>Preço: " + result['pedidos'][key]['preco'] + "</p>\n\t" +
-            "<p>Endereço: " + result['pedidos'][key]['endereco'] + "</p>\n\t" +
-            "<p>Telefone: " + result['pedidos'][key]['telefone'] + "</p>\n\t" +
-            "<p>Status: " + result['pedidos'][key]['status'] + "</p>\n\t" +
-            "<p>Observações: " + result['pedidos'][key]['observacao pedido'] + "</p>\n\t" +
-            "<button class='btncont'>Completo</button>\n</div>\n";
-        };
-
-        $("#listaPedidos").html(updatedHtml);
-    }
-
-    setInterval(function() { checkUpdates("pedidos", getUpdates) }, 5000);
+<script src="{% static '/js/admin.js' %}">
 </script>
 
 {% endblock %}

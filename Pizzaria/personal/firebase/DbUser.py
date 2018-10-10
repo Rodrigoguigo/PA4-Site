@@ -40,3 +40,6 @@ class DbUser:
 
     def deletePizza(self, pizza):
         self._db.child('pizzas').child(pizza).remove(self.currentUser['idToken'])
+    
+    def deletePedido(self, pedido):
+        self._db.child('pedidos').child(pedido).remove(self.currentUser['idToken'])
