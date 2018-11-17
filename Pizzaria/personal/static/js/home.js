@@ -23,6 +23,15 @@ for (i = 0; i < head.length; i++) {
     )
 };
 
+$("#fone").mask("(00) 0000-00009");
+$("#fone").keyup(function(){
+    if($(this).val().length == 15){
+        $("#fone").mask("(00) 00000-0009");
+    } else {
+        $("#fone").mask("(00) 0000-00009");
+    }
+});
+
 function checkOffset() {
     function getRectTop(el){
         var rect = el.getBoundingClientRect();
@@ -98,6 +107,29 @@ $(function(){
         });
     });
 });
+
+$(function(){
+    $('#Pesquisa').on('submit', function(e){
+        e.preventDefault();
+        $.ajax({
+            url: $(this).attr('action'),
+            data: {
+                'telefone': $('#fone').val(),
+                'csrfmiddlewaretoken': csrftoken
+            },
+            dataType: 'json',
+            method: $(this).attr('method'),
+            success: function(data){
+                if(!data.pedido){
+                    $('#SemPedido').css('display', 'block');
+                }
+                else{
+                    $('#PedidoInfo').load(' #PedidoInfo', data.pedido).css('display', 'block');
+                }
+            }
+        })
+    })
+})
 
 function openTab(e, cityName){
     var i, tabcontent, tablinks;

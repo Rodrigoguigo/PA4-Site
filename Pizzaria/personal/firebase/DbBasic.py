@@ -63,3 +63,11 @@ class DbBasic:
 
     def getPedidos(self):
         return db.reference('pedidos').get()
+
+    def getPedido(self, fone):
+        pedidos = db.reference('pedidos').get()
+
+        for chave in pedidos:
+            if pedidos[chave]['telefone'] == fone:
+                return pedidos['chave']
+        return False

@@ -113,6 +113,22 @@ def completeOrder(request):
 
     return checkUpdates(request)
 
+def getPedido(request):
+    global DB
+    
+    fone = request.POST['telefone']
+
+    pedido = DB.getPedido(fone)
+
+    print(pedido)
+
+    context = {
+        'pedido' : pedido
+    }
+
+    return HttpResponse(json.dumps(context), content_type='application/json')
+    
+
 def checkUpdates(request):
     global DB
     context = ''

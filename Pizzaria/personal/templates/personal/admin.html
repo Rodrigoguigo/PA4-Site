@@ -17,6 +17,7 @@
     <div id="listaPedidos" class="row mx-4 my-3">
     {% for pedido in pedidos %}
         <div class="grid-item pedidos-item col-md-6 col-sm-12">
+            <p>Nome: {{ pedido.1.nome }}</p>
             <p>Pizzas: {% if "pizzas"|in:pedido.1 %}
                 {{ pedido.1.pizzas.values|join:", " }}
             {% endif %}</p>
