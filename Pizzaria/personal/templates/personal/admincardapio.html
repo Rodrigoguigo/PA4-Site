@@ -12,7 +12,7 @@
                 <p class="ctext">{{ pizza.descricao }}</p>
                 <p class="cpreco">R$ {{ pizza.preco|floatformat:2 }}</p>
                 <button id="btnInfo" class="btn btn-success" onclick="changeTab('{{pizza.nome}}', 'Edit')">Editar</button>
-                <form id="remove" style=" width: 100%; margin: 0%;" action="{% url 'adminCardapio' %}" method="POST">{% csrf_token %}
+                <form id="remove" style="width: 100%; margin: 0%;" action="{% url 'adminCardapio' %}" method="POST">{% csrf_token %}
                     <button class="btn btn-danger" type="submit" name="remove" value="{{ pizza.nome }}">Remover</button>
                 </form>
             </div>

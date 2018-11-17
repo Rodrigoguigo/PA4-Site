@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from .firebase.DbBasic import DbBasic
 from .firebase.DbUser import DbUser
 from .Watson.WatBasics import WatBasics
+from datetime import datetime
 import json
 
 WATSON = WatBasics()
@@ -11,7 +12,7 @@ USER = DbUser()
 
 def index(request):
     global WATSON, DB
-    WATSON = WatBasics()
+    WATSON.reiniciarConversa();
     context = {
         'pizzas' : DB.getPizzas()
     }
@@ -37,13 +38,18 @@ def admin(request):
     if not USER.isUserLoggedIn():
         return redirect('login')
     pedidos = DB.getPedidos()
-    for chave, pedido in pedidos.items():
-        if 'pizzas' in pedido:
-            for chave_pizza in pedido['pizzas']:
-                pedido['pizzas'][chave_pizza] = str(pedido['pizzas'][chave_pizza]) + " " + chave_pizza
-        if 'refrigerante' in pedido:
-            for chave_refri in pedido['refrigerante']:
-                pedido['refrigerante'][chave_refri] = str(pedido['refrigerante'][chave_refri]) + " " + chave_refri
+
+    if pedidos is not None:
+        for chave, pedido in pedidos.items():
+            if 'pizzas' in pedido:
+                for chave_pizza in pedido['pizzas']:
+                    pedido['pizzas'][chave_pizza] = str(pedido['pizzas'][chave_pizza]) + " " + chave_pizza
+            if 'refrigerante' in pedido:
+                for chave_refri in pedido['refrigerante']:
+                    pedido['refrigerante'][chave_refri] = str(pedido['refrigerante'][chave_refri]) + " " + chave_refri
+            pedido['data_pedido'] = datetime.strptime(pedido['data_pedido'], '%Y-%m-%d %H:%M:%S.%f')
+   
+        pedidos = sorted(pedidos.items(), key=lambda x: (x[1]['data_pedido'], x[0]), reverse=True)
 
     context = {
         'pedidos' : pedidos
@@ -98,21 +104,54 @@ def sendMessage(request):
     }
     return HttpResponse(json.dumps(data), content_type='application/json')
 
+def completeOrder(request):
+    global USER
+
+    pedido = request.POST['pedido']
+
+    USER.deletePedido(pedido)
+
+    return checkUpdates(request)
+
+def getPedido(request):
+    global DB
+    
+    fone = request.POST['telefone']
+    fone.replace('(', '').replace(')','')
+    fone.trim()
+    print(fone)
+
+    pedido = DB.getPedido(fone)
+
+    print(pedido)
+
+    context = {
+        'pedido' : pedido
+    }
+
+    return HttpResponse(json.dumps(context), content_type='application/json')
+    
+
 def checkUpdates(request):
     global DB
     context = ''
 
     if 'pedidos' in request.POST['message']:
         pedidos = DB.getPedidos()
-        for chave, pedido in pedidos.items():
-            if 'pizzas' in pedido:
-                for chave_pizza in pedido['pizzas']:
-                    pedido['pizzas'][chave_pizza] = str(pedido['pizzas'][chave_pizza]) + " " + chave_pizza
-                pedido['pizzas'] = ', '.join(x for x in pedido['pizzas'].values())
-            if 'refrigerante' in pedido:
-                for chave_refri in pedido['refrigerante']:
-                    pedido['refrigerante'][chave_refri] = str(pedido['refrigerante'][chave_refri]) + " " + chave_refri
-                pedido['refrigerante'] = ', '.join(x for x in pedido['refrigerante'].values())
+
+        if pedidos is not None:
+            for chave, pedido in pedidos.items():
+                if 'pizzas' in pedido:
+                    for chave_pizza in pedido['pizzas']:
+                        pedido['pizzas'][chave_pizza] = str(pedido['pizzas'][chave_pizza]) + " " + chave_pizza
+                    pedido['pizzas'] = ', '.join(x for x in pedido['pizzas'].values())
+                if 'refrigerante' in pedido:
+                    for chave_refri in pedido['refrigerante']:
+                        pedido['refrigerante'][chave_refri] = str(pedido['refrigerante'][chave_refri]) + " " + chave_refri
+                    pedido['refrigerante'] = ', '.join(x for x in pedido['refrigerante'].values())
+                pedido['data_pedido'] = datetime.strptime(pedido['data_pedido'], '%Y-%m-%d %H:%M:%S.%f')
+
+            pedidos = sorted(pedidos.items(), key=lambda x: (x[1]['data_pedido'], x[0]), reverse=True)
 
         context = {
             'pedidos' : pedidos
@@ -123,4 +162,4 @@ def checkUpdates(request):
             'pizzas' : pizzas
         }
 
-    return HttpResponse(json.dumps(context), content_type='application/json')
+    return HttpResponse(json.dumps(context, default=str), content_type='application/json')

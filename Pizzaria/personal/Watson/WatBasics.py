@@ -2,6 +2,8 @@ from __future__ import print_function
 import json
 from watson_developer_cloud import ConversationV1
 
+from datetime import datetime
+
 from personal.firebase.DbBasic import DbBasic
 
 
@@ -43,6 +45,17 @@ class WatBasics:
     def __zerarContext(self):
         self.context = 0
 
+    def reiniciarConversa(self):
+        self.__zerarContext()
+        self.total = ""
+        self.escritaValorPizza = {}
+        self.escritaValorRefri = {}
+        self.preco = 0
+        self.originalEscritaRefri = {}
+        self.originalEscritaPizza = {}
+        self.cende = ""
+        self.auxnum = {}
+
     def fazerChamado(self, texto):
         self.files = open("analisador.txt", "a")
         if self.context == 0:
@@ -55,6 +68,7 @@ class WatBasics:
             self.context['ler'] = "F"
             self.context['pedido'] = 'Pedido' + str(self.fire.getID())
             self.context['obs'] = ''
+            self.context['zerar'] = 'F'
 
         # elif self.context == finalnode:
 
@@ -86,8 +100,6 @@ class WatBasics:
             self.fire.gravarPedido(self.montarPedido(), self.context['pedido'])
             self.context['grava'] = 'F'
             self.context = 0
-
-        print(self.__respostas)
         return ", ".join(self.__respostas['output']['text'])
 
     def adicionarContextVar(self, chave, valor):
@@ -102,25 +114,27 @@ class WatBasics:
 
 
             else:
+                nome = self.fire.pegarNome(self.context['telefone'])
                 self.context['new'] = 's'
-                self.context['cende'] = 'Bem vindo de novo ' + self.fire.pegarNome(self.context['telefone'])
+                self.context['cende'] = 'Bem vindo de novo ' + nome
+                self.context['nome'] = nome
                 self.context['ende'] = aju
-                self.total += 'entregar no endereço ' + aju + '?'
-                self.context['frase'] = self.total
 
     def montarPedido(self):
         aux = self.context
         pedido = {
             "endereco": aux['ende'],
-            "observacao pagamento": aux['obs'],
-            "forma de pagamento": aux['fpag'],
+            "observacao_pagamento": aux['tipoc'],
+            "forma_pagamento": aux['fpag'],
             "preco": self.calculaPreco(),
             "status": "não atendido",
             "pizzas": self.escritaValorPizza,
             "refrigerante": self.escritaValorRefri,
-            "observacao pedido": self.context['obspedido'],
+            "observacao_pedido": self.context['obspedido'],
             "nome": str(self.fire.pegarNome(self.context['telefone'])),
-            "telefone": "".join(self.context['telefone'])
+            "telefone": "".join(self.context['telefone']),
+            "data_pedido": str(datetime.now())
+
         }
         return pedido
 
@@ -130,11 +144,11 @@ class WatBasics:
         som = 0
         for namep, names in self.originalEscritaPizza.items():
             som += int(self.escritaValorPizza[names]) * int(pizzas[namep]['preco'])
-            print(som)
+            # print(som)
         for namep, names in self.originalEscritaRefri.items():
             som += int(self.escritaValorRefri[names]) * int(refris[namep]['preco'])
-            print(str(som) + "refri")
-        print(str(som))
+            # print(str(som) + "refri")
+        # print(str(som))
         return som
 
     def linkarValores(self):
@@ -171,7 +185,7 @@ class WatBasics:
                 self.originalEscritaPizza[item[0]] = item[1]
             for item in list(auxrefri.items()):
                 self.originalEscritaRefri[item[0]] = item[1]
-            while valp !=[]:
+            while valp != []:
                 for palavra in valp:
                     ind = auxfrase.index(palavra)
                     var1 = ""
@@ -243,9 +257,9 @@ class WatBasics:
 
             if self.total == "":
                 if sum(tocheck) > 1:
-                    self.total += "então são"
+                    self.total += " são"
                 else:
-                    self.total += "então é"
+                    self.total += " é"
             lp = list(dicPizza.items())
             lr = list(dicRefri.items())
 
@@ -269,5 +283,5 @@ class WatBasics:
                         self.total += " e "
                     else:
                         self.total += ","
-
+            self.context['preco'] = self.calculaPreco()
             self.context['frase'] = self.total

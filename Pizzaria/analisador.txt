@@ -23493,4 +23493,9101 @@
     "obspedido": "nenhuma",
     "tipoc": "1000"
   }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "aa6bd42d-9832-475e-9b28-a0848e6a52a5",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido400",
+    "obs": ""
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6f86261a-8ff8-43d8-822f-dcde15981081",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido915",
+    "obs": ""
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "c09c62d7-be6f-4c79-bb54-9e7f641b781e",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido915",
+    "obs": ""
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 0.9867078304290773
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        12,
+        15
+      ],
+      "value": "1",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 1
+      }
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        25,
+        31
+      ],
+      "value": "Queijo",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "Gostaria de uma pizza de queijo"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bebidas?"
+      }
+    ],
+    "text": [
+      "Bebidas?"
+    ],
+    "nodes_visited": [
+      "node_2_1536694712100",
+      "handler_4_1536694807221",
+      "handler_8_1536694877396",
+      "slot_6_1536694877396"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "c09c62d7-be6f-4c79-bb54-9e7f641b781e",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_6_1536694877396",
+          "state": "in_progress"
+        }
+      ],
+      "dialog_turn_counter": 2,
+      "dialog_request_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      }
+    },
+    "pedido": "Pedido915",
+    "gravarende": "F",
+    "ler": "F",
+    "telefone": [],
+    "obs": "",
+    "grava": "F",
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ]
+  }
+}{
+  "intents": [
+    {
+      "intent": "Negacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "nenhuma"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Agora por favor digite se numero de telefone para podermos te indentificar"
+      }
+    ],
+    "text": [
+      "Agora por favor digite se numero de telefone para podermos te indentificar"
+    ],
+    "nodes_visited": [
+      "slot_6_1536694877396",
+      "handler_15_1536696466543",
+      "node_2_1536694712100"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "c09c62d7-be6f-4c79-bb54-9e7f641b781e",
+    "system": {
+      "dialog_request_counter": 3,
+      "dialog_stack": [
+        {
+          "dialog_node": "node_2_1536694712100"
+        }
+      ],
+      "dialog_turn_counter": 3,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ]
+    },
+    "gravarende": "F",
+    "pedido": "Pedido915",
+    "ler": "F",
+    "preco": 20,
+    "frase": "ent\u00e3o \u00e9 1 queijo e ",
+    "telefone": [],
+    "obs": "",
+    "grava": "F",
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        9
+      ],
+      "value": "998558024",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 998558024
+      }
+    }
+  ],
+  "input": {
+    "text": "998558024"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Alguma observa\u00e7\u00e3o no seu pedido ?"
+      }
+    ],
+    "text": [
+      "Alguma observa\u00e7\u00e3o no seu pedido ?"
+    ],
+    "nodes_visited": [
+      "node_19_1536697117956"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "c09c62d7-be6f-4c79-bb54-9e7f641b781e",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_19_1536697117956"
+        }
+      ],
+      "dialog_turn_counter": 4,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_request_counter": 4,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ]
+    },
+    "pedido": "Pedido915",
+    "gravarende": "F",
+    "frase": "ent\u00e3o \u00e9 1 queijo e ",
+    "preco": 20,
+    "ler": "V",
+    "telefone": [
+      "998558024"
+    ],
+    "obs": "",
+    "grava": "F",
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ]
+  }
+}{
+  "intents": [
+    {
+      "intent": "Negacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "nenhuma"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bem vindo de novo Rodrigo"
+      },
+      {
+        "response_type": "text",
+        "text": "ent\u00e3o \u00e9 1 queijo e entregar no endere\u00e7o Rua Guilherme Damini, 96pelo pre\u00e7o de 20 reais?"
+      }
+    ],
+    "text": [
+      "Bem vindo de novo Rodrigo",
+      "ent\u00e3o \u00e9 1 queijo e entregar no endere\u00e7o Rua Guilherme Damini, 96pelo pre\u00e7o de 20 reais?"
+    ],
+    "nodes_visited": [
+      "node_4_1537730868787",
+      "node_36_1537642067646",
+      "node_37_1537643158755"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "c09c62d7-be6f-4c79-bb54-9e7f641b781e",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_37_1537643158755"
+        }
+      ],
+      "dialog_turn_counter": 5,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_request_counter": 5,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ]
+    },
+    "gravarende": "F",
+    "pedido": "Pedido915",
+    "cende": "Bem vindo de novo Rodrigo",
+    "ende": "Rua Guilherme Damini, 96",
+    "new": "s",
+    "preco": 20,
+    "frase": "ent\u00e3o \u00e9 1 queijo e entregar no endere\u00e7o Rua Guilherme Damini, 96pelo pre\u00e7o de 20 reais",
+    "ler": "V",
+    "telefone": [
+      "998558024"
+    ],
+    "obs": "",
+    "grava": "F",
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "obspedido": "nenhuma"
+  }
+}{
+  "intents": [
+    {
+      "intent": "afrimacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "sim"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "qual a forma de pagamento?"
+      }
+    ],
+    "text": [
+      "qual a forma de pagamento?"
+    ],
+    "nodes_visited": [
+      "node_45_1537644973067"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "c09c62d7-be6f-4c79-bb54-9e7f641b781e",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_45_1537644973067"
+        }
+      ],
+      "dialog_turn_counter": 6,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_request_counter": 6,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ]
+    },
+    "pedido": "Pedido915",
+    "gravarende": "F",
+    "cende": "Bem vindo de novo Rodrigo",
+    "ende": "Rua Guilherme Damini, 96",
+    "new": "s",
+    "preco": 20,
+    "frase": "ent\u00e3o \u00e9 1 queijo e entregar no endere\u00e7o Rua Guilherme Damini, 96pelo pre\u00e7o de 20 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96pelo pre\u00e7o de 20 reais",
+    "ler": "F",
+    "obspedido": "nenhuma",
+    "telefone": [
+      "998558024"
+    ],
+    "obs": "",
+    "grava": "F",
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "forma_pagamento",
+      "location": [
+        0,
+        8
+      ],
+      "value": "dinheiro",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "dinheiro"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Troco para quanto ?"
+      }
+    ],
+    "text": [
+      "Troco para quanto ?"
+    ],
+    "nodes_visited": [
+      "node_1_1538851201550"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "c09c62d7-be6f-4c79-bb54-9e7f641b781e",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_1_1538851201550"
+        }
+      ],
+      "dialog_turn_counter": 7,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_request_counter": 7,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ]
+    },
+    "gravarende": "F",
+    "pedido": "Pedido915",
+    "cende": "Bem vindo de novo Rodrigo",
+    "ende": "Rua Guilherme Damini, 96",
+    "new": "s",
+    "preco": 20,
+    "frase": "ent\u00e3o \u00e9 1 queijo e entregar no endere\u00e7o Rua Guilherme Damini, 96pelo pre\u00e7o de 20 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96pelo pre\u00e7o de 20 reais",
+    "ler": "F",
+    "obspedido": "nenhuma",
+    "telefone": [
+      "998558024"
+    ],
+    "obs": "",
+    "grava": "F",
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "fpag": "dinheiro"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        2
+      ],
+      "value": "50",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 50
+      }
+    }
+  ],
+  "input": {
+    "text": "50"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido915"
+      }
+    ],
+    "text": [
+      "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido915"
+    ],
+    "nodes_visited": [
+      "node_2_1538852286483"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "c09c62d7-be6f-4c79-bb54-9e7f641b781e",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 8,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1538852286483": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_request_counter": 8,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "pedido": "Pedido915",
+    "gravarende": "F",
+    "cende": "Bem vindo de novo Rodrigo",
+    "ende": "Rua Guilherme Damini, 96",
+    "new": "s",
+    "preco": 20,
+    "frase": "ent\u00e3o \u00e9 1 queijo e entregar no endere\u00e7o Rua Guilherme Damini, 96pelo pre\u00e7o de 20 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96pelo pre\u00e7o de 20 reais",
+    "ler": "F",
+    "obspedido": "nenhuma",
+    "telefone": [
+      "998558024"
+    ],
+    "fpag": "dinheiro",
+    "obs": "",
+    "grava": "V",
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "tipoc": "50"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "3423b673-d5d9-42fb-98a7-16cd308e57aa",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido631",
+    "obs": ""
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 0.918828296661377
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        12,
+        15
+      ],
+      "value": "1",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 1
+      }
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        19,
+        28
+      ],
+      "value": "Calabresa",
+      "confidence": 1
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        40,
+        46
+      ],
+      "value": "Queijo",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "Gostaria de uma de calabresa e outra de queijo"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bebidas?"
+      }
+    ],
+    "text": [
+      "Bebidas?"
+    ],
+    "nodes_visited": [
+      "node_2_1536694712100",
+      "handler_4_1536694807221",
+      "handler_8_1536694877396",
+      "slot_6_1536694877396"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "3423b673-d5d9-42fb-98a7-16cd308e57aa",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_6_1536694877396",
+          "state": "in_progress"
+        }
+      ],
+      "dialog_turn_counter": 2,
+      "dialog_request_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      }
+    },
+    "pedido": "Pedido631",
+    "gravarende": "F",
+    "ler": "F",
+    "telefone": [],
+    "obs": "",
+    "grava": "F",
+    "Sabores": [
+      [
+        "Calabresa",
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        1
+      ],
+      "value": "2",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 2
+      }
+    },
+    {
+      "entity": "Refrigerantes",
+      "location": [
+        2,
+        7
+      ],
+      "value": "Fanta",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "2 fanta"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Agora por favor digite se numero de telefone para podermos te indentificar"
+      }
+    ],
+    "text": [
+      "Agora por favor digite se numero de telefone para podermos te indentificar"
+    ],
+    "nodes_visited": [
+      "slot_6_1536694877396",
+      "handler_7_1536694877396",
+      "node_2_1536694712100"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "3423b673-d5d9-42fb-98a7-16cd308e57aa",
+    "system": {
+      "dialog_request_counter": 3,
+      "dialog_stack": [
+        {
+          "dialog_node": "node_2_1536694712100"
+        }
+      ],
+      "dialog_turn_counter": 3,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        }
+      }
+    },
+    "gravarende": "F",
+    "pedido": "Pedido631",
+    "ler": "F",
+    "preco": 40,
+    "frase": "ent\u00e3o \u00e9 1 queijo e entregar no endere\u00e7o Rua Guilherme Damini, 96pelo pre\u00e7o de 20 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96pelo pre\u00e7o de 20 reais 1 calabresa, 1 queijo e ",
+    "telefone": [],
+    "obs": "",
+    "grava": "F",
+    "Sabores": [
+      [
+        "Calabresa",
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "Refrigerantes": [
+      [
+        "Fanta"
+      ],
+      [
+        "2"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "ca9d50e6-7730-4bb9-a210-498628929eef",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido631",
+    "obs": ""
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 0.8431281566619873
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        12,
+        13
+      ],
+      "value": "2",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 2
+      }
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        17,
+        26
+      ],
+      "value": "Calabresa",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "Gostaria de 2 de calabresa"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bebidas?"
+      }
+    ],
+    "text": [
+      "Bebidas?"
+    ],
+    "nodes_visited": [
+      "node_2_1536694712100",
+      "handler_4_1536694807221",
+      "handler_8_1536694877396",
+      "slot_6_1536694877396"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "ca9d50e6-7730-4bb9-a210-498628929eef",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_6_1536694877396",
+          "state": "in_progress"
+        }
+      ],
+      "dialog_turn_counter": 2,
+      "dialog_request_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      }
+    },
+    "pedido": "Pedido631",
+    "gravarende": "F",
+    "ler": "F",
+    "telefone": [],
+    "obs": "",
+    "grava": "F",
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6e2c3cbd-7984-4dc0-85bd-8621acf44a23",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido631",
+    "obs": ""
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "2aff4dd8-4601-431a-8535-863572e5206c",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido305",
+    "obs": ""
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 0.8431281566619873
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        12,
+        13
+      ],
+      "value": "2",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 2
+      }
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        17,
+        26
+      ],
+      "value": "Calabresa",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "Gostaria de 2 de calabresa"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bebidas?"
+      }
+    ],
+    "text": [
+      "Bebidas?"
+    ],
+    "nodes_visited": [
+      "node_2_1536694712100",
+      "handler_4_1536694807221",
+      "handler_8_1536694877396",
+      "slot_6_1536694877396"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "2aff4dd8-4601-431a-8535-863572e5206c",
+    "system": {
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_turn_counter": 2,
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_6_1536694877396",
+          "state": "in_progress"
+        }
+      ],
+      "dialog_request_counter": 2
+    },
+    "telefone": [],
+    "ler": "F",
+    "grava": "F",
+    "gravarende": "F",
+    "pedido": "Pedido305",
+    "obs": "",
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        1
+      ],
+      "value": "2",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 2
+      }
+    },
+    {
+      "entity": "Refrigerantes",
+      "location": [
+        2,
+        6
+      ],
+      "value": "coca cola",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "2 coca"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Agora por favor digite se numero de telefone para podermos te indentificar"
+      }
+    ],
+    "text": [
+      "Agora por favor digite se numero de telefone para podermos te indentificar"
+    ],
+    "nodes_visited": [
+      "slot_6_1536694877396",
+      "handler_7_1536694877396",
+      "node_2_1536694712100"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "2aff4dd8-4601-431a-8535-863572e5206c",
+    "system": {
+      "dialog_request_counter": 3,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_2_1536694712100"
+        }
+      ],
+      "dialog_turn_counter": 3
+    },
+    "telefone": [],
+    "ler": "F",
+    "preco": 40,
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 2 calabresa e ",
+    "grava": "F",
+    "gravarende": "F",
+    "pedido": "Pedido305",
+    "obs": "",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        9
+      ],
+      "value": "998558024",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 998558024
+      }
+    }
+  ],
+  "input": {
+    "text": "998558024"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Alguma observa\u00e7\u00e3o no seu pedido ?"
+      }
+    ],
+    "text": [
+      "Alguma observa\u00e7\u00e3o no seu pedido ?"
+    ],
+    "nodes_visited": [
+      "node_19_1536697117956"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "2aff4dd8-4601-431a-8535-863572e5206c",
+    "system": {
+      "dialog_turn_counter": 4,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_19_1536697117956"
+        }
+      ],
+      "dialog_request_counter": 4
+    },
+    "telefone": [
+      "998558024"
+    ],
+    "ler": "V",
+    "preco": 54,
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 2 calabresa e junto com 2 coca e ",
+    "grava": "F",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "gravarende": "F",
+    "pedido": "Pedido305",
+    "obs": ""
+  }
+}{
+  "intents": [
+    {
+      "intent": "Negacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "nenhuma"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bem vindo de novo Rodrigo"
+      },
+      {
+        "response_type": "text",
+        "text": "ent\u00e3o s\u00e3o 2 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96pelo pre\u00e7o de 54 reais?"
+      }
+    ],
+    "text": [
+      "Bem vindo de novo Rodrigo",
+      "ent\u00e3o s\u00e3o 2 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96pelo pre\u00e7o de 54 reais?"
+    ],
+    "nodes_visited": [
+      "node_4_1537730868787",
+      "node_36_1537642067646",
+      "node_37_1537643158755"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "2aff4dd8-4601-431a-8535-863572e5206c",
+    "system": {
+      "dialog_request_counter": 5,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_37_1537643158755"
+        }
+      ],
+      "dialog_turn_counter": 5
+    },
+    "telefone": [
+      "998558024"
+    ],
+    "ler": "V",
+    "preco": 54,
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 2 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96pelo pre\u00e7o de 54 reais",
+    "new": "s",
+    "cende": "Bem vindo de novo Rodrigo",
+    "ende": "Rua Guilherme Damini, 96",
+    "grava": "F",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "gravarende": "F",
+    "pedido": "Pedido305",
+    "obs": "",
+    "obspedido": "nenhuma"
+  }
+}{
+  "intents": [
+    {
+      "intent": "afrimacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "sim"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "qual a forma de pagamento?"
+      }
+    ],
+    "text": [
+      "qual a forma de pagamento?"
+    ],
+    "nodes_visited": [
+      "node_45_1537644973067"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "2aff4dd8-4601-431a-8535-863572e5206c",
+    "system": {
+      "dialog_turn_counter": 6,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_45_1537644973067"
+        }
+      ],
+      "dialog_request_counter": 6
+    },
+    "telefone": [
+      "998558024"
+    ],
+    "ler": "F",
+    "preco": 54,
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 2 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96pelo pre\u00e7o de 54 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96pelo pre\u00e7o de 54 reais",
+    "new": "s",
+    "cende": "Bem vindo de novo Rodrigo",
+    "ende": "Rua Guilherme Damini, 96",
+    "grava": "F",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "gravarende": "F",
+    "pedido": "Pedido305",
+    "obs": "",
+    "obspedido": "nenhuma"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "21ee931d-a6b5-428d-943b-6fa432648002",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido827",
+    "obs": ""
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "8c3b18f1-1783-4268-9e93-3883d64b2bdb",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido827",
+    "obs": ""
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 0.6060643196105957
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        6,
+        7
+      ],
+      "value": "2",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 2
+      }
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        11,
+        20
+      ],
+      "value": "Calabresa",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "Quero 2 de calabresa"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bebidas?"
+      }
+    ],
+    "text": [
+      "Bebidas?"
+    ],
+    "nodes_visited": [
+      "node_2_1536694712100",
+      "handler_4_1536694807221",
+      "handler_8_1536694877396",
+      "slot_6_1536694877396"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "8c3b18f1-1783-4268-9e93-3883d64b2bdb",
+    "system": {
+      "dialog_request_counter": 2,
+      "dialog_turn_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_6_1536694877396",
+          "state": "in_progress"
+        }
+      ]
+    },
+    "telefone": [],
+    "pedido": "Pedido827",
+    "ler": "F",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": "",
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        1
+      ],
+      "value": "2",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 2
+      }
+    },
+    {
+      "entity": "Refrigerantes",
+      "location": [
+        2,
+        7
+      ],
+      "value": "Fanta",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "2 fanta"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Agora por favor digite se numero de telefone para podermos te indentificar"
+      }
+    ],
+    "text": [
+      "Agora por favor digite se numero de telefone para podermos te indentificar"
+    ],
+    "nodes_visited": [
+      "slot_6_1536694877396",
+      "handler_7_1536694877396",
+      "node_2_1536694712100"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "8c3b18f1-1783-4268-9e93-3883d64b2bdb",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_2_1536694712100"
+        }
+      ],
+      "dialog_request_counter": 3,
+      "dialog_turn_counter": 3,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        }
+      }
+    },
+    "telefone": [],
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 2 calabresa e ",
+    "pedido": "Pedido827",
+    "preco": 40,
+    "ler": "F",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": "",
+    "Refrigerantes": [
+      [
+        "Fanta"
+      ],
+      [
+        "2"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "88d2ebe5-c7b2-4748-b63b-edc76fa1b997",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido827",
+    "obs": ""
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 0.8949166774749757
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        12,
+        13
+      ],
+      "value": "1",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 1
+      }
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        17,
+        23
+      ],
+      "value": "Queijo",
+      "confidence": 1
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        35,
+        44
+      ],
+      "value": "Calabresa",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "Gostaria de 1 de queijo e outra de calabresa"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bebidas?"
+      }
+    ],
+    "text": [
+      "Bebidas?"
+    ],
+    "nodes_visited": [
+      "node_2_1536694712100",
+      "handler_4_1536694807221",
+      "handler_8_1536694877396",
+      "slot_6_1536694877396"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "88d2ebe5-c7b2-4748-b63b-edc76fa1b997",
+    "system": {
+      "dialog_request_counter": 2,
+      "dialog_turn_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_6_1536694877396",
+          "state": "in_progress"
+        }
+      ]
+    },
+    "telefone": [],
+    "pedido": "Pedido827",
+    "ler": "F",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": "",
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        1
+      ],
+      "value": "2",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 2
+      }
+    },
+    {
+      "entity": "Refrigerantes",
+      "location": [
+        2,
+        6
+      ],
+      "value": "coca cola",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "2 coca"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Agora por favor digite se numero de telefone para podermos te indentificar"
+      }
+    ],
+    "text": [
+      "Agora por favor digite se numero de telefone para podermos te indentificar"
+    ],
+    "nodes_visited": [
+      "slot_6_1536694877396",
+      "handler_7_1536694877396",
+      "node_2_1536694712100"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "88d2ebe5-c7b2-4748-b63b-edc76fa1b997",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_2_1536694712100"
+        }
+      ],
+      "dialog_request_counter": 3,
+      "dialog_turn_counter": 3,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        }
+      }
+    },
+    "telefone": [],
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e ",
+    "pedido": "Pedido827",
+    "preco": 40,
+    "ler": "F",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": "",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        9
+      ],
+      "value": "998558024",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 998558024
+      }
+    }
+  ],
+  "input": {
+    "text": "998558024"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Alguma observa\u00e7\u00e3o no seu pedido ?"
+      }
+    ],
+    "text": [
+      "Alguma observa\u00e7\u00e3o no seu pedido ?"
+    ],
+    "nodes_visited": [
+      "node_19_1536697117956"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "88d2ebe5-c7b2-4748-b63b-edc76fa1b997",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_19_1536697117956"
+        }
+      ],
+      "dialog_request_counter": 4,
+      "dialog_turn_counter": 4,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        }
+      }
+    },
+    "telefone": [
+      "998558024"
+    ],
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e ",
+    "pedido": "Pedido827",
+    "preco": 54,
+    "ler": "V",
+    "grava": "F",
+    "gravarende": "F",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "obs": ""
+  }
+}{
+  "intents": [
+    {
+      "intent": "Negacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "nenhuma"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bem vindo de novo Rodrigo"
+      },
+      {
+        "response_type": "text",
+        "text": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais?"
+      }
+    ],
+    "text": [
+      "Bem vindo de novo Rodrigo",
+      "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais?"
+    ],
+    "nodes_visited": [
+      "node_4_1537730868787",
+      "node_36_1537642067646",
+      "node_37_1537643158755"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "88d2ebe5-c7b2-4748-b63b-edc76fa1b997",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_37_1537643158755"
+        }
+      ],
+      "dialog_request_counter": 5,
+      "dialog_turn_counter": 5,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        }
+      }
+    },
+    "telefone": [
+      "998558024"
+    ],
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais",
+    "cende": "Bem vindo de novo Rodrigo",
+    "pedido": "Pedido827",
+    "new": "s",
+    "preco": 54,
+    "ende": "Rua Guilherme Damini, 96",
+    "ler": "V",
+    "grava": "F",
+    "gravarende": "F",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "obs": "",
+    "obspedido": "nenhuma"
+  }
+}{
+  "intents": [
+    {
+      "intent": "afrimacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "sim"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "qual a forma de pagamento?"
+      }
+    ],
+    "text": [
+      "qual a forma de pagamento?"
+    ],
+    "nodes_visited": [
+      "node_45_1537644973067"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "88d2ebe5-c7b2-4748-b63b-edc76fa1b997",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_45_1537644973067"
+        }
+      ],
+      "dialog_request_counter": 6,
+      "dialog_turn_counter": 6,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        }
+      }
+    },
+    "telefone": [
+      "998558024"
+    ],
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais",
+    "cende": "Bem vindo de novo Rodrigo",
+    "pedido": "Pedido827",
+    "new": "s",
+    "preco": 54,
+    "ende": "Rua Guilherme Damini, 96",
+    "ler": "F",
+    "grava": "F",
+    "gravarende": "F",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "obs": "",
+    "obspedido": "nenhuma"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "forma_pagamento",
+      "location": [
+        0,
+        8
+      ],
+      "value": "dinheiro",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "dinheiro"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Troco para quanto ?"
+      }
+    ],
+    "text": [
+      "Troco para quanto ?"
+    ],
+    "nodes_visited": [
+      "node_1_1538851201550"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "88d2ebe5-c7b2-4748-b63b-edc76fa1b997",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_1_1538851201550"
+        }
+      ],
+      "dialog_request_counter": 7,
+      "dialog_turn_counter": 7,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        }
+      }
+    },
+    "telefone": [
+      "998558024"
+    ],
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais",
+    "cende": "Bem vindo de novo Rodrigo",
+    "pedido": "Pedido827",
+    "new": "s",
+    "preco": 54,
+    "ende": "Rua Guilherme Damini, 96",
+    "ler": "F",
+    "grava": "F",
+    "gravarende": "F",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "obs": "",
+    "obspedido": "nenhuma",
+    "fpag": "dinheiro"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        2
+      ],
+      "value": "75",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 75
+      }
+    }
+  ],
+  "input": {
+    "text": "75"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido827"
+      }
+    ],
+    "text": [
+      "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido827"
+    ],
+    "nodes_visited": [
+      "node_2_1538852286483"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "88d2ebe5-c7b2-4748-b63b-edc76fa1b997",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_request_counter": 8,
+      "dialog_turn_counter": 8,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1538852286483": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "telefone": [
+      "998558024"
+    ],
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais",
+    "cende": "Bem vindo de novo Rodrigo",
+    "pedido": "Pedido827",
+    "new": "s",
+    "preco": 54,
+    "ende": "Rua Guilherme Damini, 96",
+    "ler": "F",
+    "grava": "V",
+    "gravarende": "F",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "obs": "",
+    "obspedido": "nenhuma",
+    "fpag": "dinheiro",
+    "tipoc": "75"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "9a2bba0f-6128-47b4-9405-fb9839af78af",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido343",
+    "obs": ""
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 0.9634591102600099
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        12,
+        13
+      ],
+      "value": "3",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 3
+      }
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        24,
+        33
+      ],
+      "value": "Calabresa",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "Gostaria de 3 pizzas de calabresa"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bebidas?"
+      }
+    ],
+    "text": [
+      "Bebidas?"
+    ],
+    "nodes_visited": [
+      "node_2_1536694712100",
+      "handler_4_1536694807221",
+      "handler_8_1536694877396",
+      "slot_6_1536694877396"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "9a2bba0f-6128-47b4-9405-fb9839af78af",
+    "system": {
+      "dialog_request_counter": 2,
+      "dialog_turn_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_6_1536694877396",
+          "state": "in_progress"
+        }
+      ]
+    },
+    "telefone": [],
+    "pedido": "Pedido343",
+    "ler": "F",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": "",
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "3"
+      ]
+    ]
+  }
+}{
+  "intents": [
+    {
+      "intent": "Negacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "nenhuma"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Agora por favor digite se numero de telefone para podermos te indentificar"
+      }
+    ],
+    "text": [
+      "Agora por favor digite se numero de telefone para podermos te indentificar"
+    ],
+    "nodes_visited": [
+      "slot_6_1536694877396",
+      "handler_15_1536696466543",
+      "node_2_1536694712100"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "9a2bba0f-6128-47b4-9405-fb9839af78af",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_2_1536694712100"
+        }
+      ],
+      "dialog_request_counter": 3,
+      "dialog_turn_counter": 3,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ]
+    },
+    "telefone": [],
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "3"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 3 calabresa e ",
+    "pedido": "Pedido343",
+    "preco": 60,
+    "ler": "F",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": ""
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        9
+      ],
+      "value": "998558024",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 998558024
+      }
+    }
+  ],
+  "input": {
+    "text": "998558024"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Alguma observa\u00e7\u00e3o no seu pedido ?"
+      }
+    ],
+    "text": [
+      "Alguma observa\u00e7\u00e3o no seu pedido ?"
+    ],
+    "nodes_visited": [
+      "node_19_1536697117956"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "9a2bba0f-6128-47b4-9405-fb9839af78af",
+    "system": {
+      "dialog_request_counter": 4,
+      "dialog_turn_counter": 4,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_19_1536697117956"
+        }
+      ],
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ]
+    },
+    "telefone": [
+      "998558024"
+    ],
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "3"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 3 calabresa e ",
+    "pedido": "Pedido343",
+    "preco": 60,
+    "ler": "V",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": ""
+  }
+}{
+  "intents": [
+    {
+      "intent": "Negacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "nenhuma"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bem vindo de novo Rodrigo"
+      },
+      {
+        "response_type": "text",
+        "text": "ent\u00e3o s\u00e3o 3 calabresa e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 60 reais?"
+      }
+    ],
+    "text": [
+      "Bem vindo de novo Rodrigo",
+      "ent\u00e3o s\u00e3o 3 calabresa e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 60 reais?"
+    ],
+    "nodes_visited": [
+      "node_4_1537730868787",
+      "node_36_1537642067646",
+      "node_37_1537643158755"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "9a2bba0f-6128-47b4-9405-fb9839af78af",
+    "system": {
+      "dialog_request_counter": 5,
+      "dialog_turn_counter": 5,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_37_1537643158755"
+        }
+      ],
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ]
+    },
+    "telefone": [
+      "998558024"
+    ],
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "3"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 3 calabresa e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 60 reais",
+    "cende": "Bem vindo de novo Rodrigo",
+    "pedido": "Pedido343",
+    "new": "s",
+    "preco": 60,
+    "ende": "Rua Guilherme Damini, 96",
+    "ler": "V",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": "",
+    "obspedido": "nenhuma"
+  }
+}{
+  "intents": [
+    {
+      "intent": "afrimacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "sim"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "qual a forma de pagamento?"
+      }
+    ],
+    "text": [
+      "qual a forma de pagamento?"
+    ],
+    "nodes_visited": [
+      "node_45_1537644973067"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "9a2bba0f-6128-47b4-9405-fb9839af78af",
+    "system": {
+      "dialog_request_counter": 6,
+      "dialog_turn_counter": 6,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_45_1537644973067"
+        }
+      ],
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ]
+    },
+    "telefone": [
+      "998558024"
+    ],
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "3"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 3 calabresa e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 60 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 60 reais",
+    "cende": "Bem vindo de novo Rodrigo",
+    "pedido": "Pedido343",
+    "new": "s",
+    "preco": 60,
+    "ende": "Rua Guilherme Damini, 96",
+    "ler": "F",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": "",
+    "obspedido": "nenhuma"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "forma_pagamento",
+      "location": [
+        0,
+        8
+      ],
+      "value": "dinheiro",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "dinheiro"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Troco para quanto ?"
+      }
+    ],
+    "text": [
+      "Troco para quanto ?"
+    ],
+    "nodes_visited": [
+      "node_1_1538851201550"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "9a2bba0f-6128-47b4-9405-fb9839af78af",
+    "system": {
+      "dialog_request_counter": 7,
+      "dialog_turn_counter": 7,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_1_1538851201550"
+        }
+      ],
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ]
+    },
+    "telefone": [
+      "998558024"
+    ],
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "3"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 3 calabresa e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 60 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 60 reais",
+    "cende": "Bem vindo de novo Rodrigo",
+    "pedido": "Pedido343",
+    "new": "s",
+    "preco": 60,
+    "ende": "Rua Guilherme Damini, 96",
+    "ler": "F",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": "",
+    "obspedido": "nenhuma",
+    "fpag": "dinheiro"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        3
+      ],
+      "value": "100",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 100
+      }
+    }
+  ],
+  "input": {
+    "text": "100"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido343"
+      }
+    ],
+    "text": [
+      "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido343"
+    ],
+    "nodes_visited": [
+      "node_2_1538852286483"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "9a2bba0f-6128-47b4-9405-fb9839af78af",
+    "system": {
+      "dialog_request_counter": 8,
+      "dialog_turn_counter": 8,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1538852286483": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "telefone": [
+      "998558024"
+    ],
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "3"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 3 calabresa e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 60 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 60 reais",
+    "cende": "Bem vindo de novo Rodrigo",
+    "pedido": "Pedido343",
+    "new": "s",
+    "preco": 60,
+    "ende": "Rua Guilherme Damini, 96",
+    "ler": "F",
+    "grava": "V",
+    "gravarende": "F",
+    "obs": "",
+    "obspedido": "nenhuma",
+    "fpag": "dinheiro",
+    "tipoc": "100"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "c42fe9cc-cdae-44ac-8b7c-c1a5e36bceae",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido662",
+    "obs": ""
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "Sabores",
+      "location": [
+        0,
+        9
+      ],
+      "value": "Calabresa",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "calabresa"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Eu n\u00e3o entendi. Voc\u00ea pode tentar reformular a frase."
+      }
+    ],
+    "text": [
+      "Eu n\u00e3o entendi. Voc\u00ea pode tentar reformular a frase."
+    ],
+    "nodes_visited": [
+      "Em outros casos"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "c42fe9cc-cdae-44ac-8b7c-c1a5e36bceae",
+    "system": {
+      "dialog_request_counter": 2,
+      "dialog_turn_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "Em outros casos": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "telefone": [],
+    "pedido": "Pedido662",
+    "ler": "F",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": ""
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "c82c52aa-9aa3-4221-9af1-78abf8497d9a",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido662",
+    "obs": ""
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 0.9816842555999756
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        12,
+        15
+      ],
+      "value": "1",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 1
+      }
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        25,
+        34
+      ],
+      "value": "Calabresa",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "Gostaria de uma pizza de calabresa"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bebidas?"
+      }
+    ],
+    "text": [
+      "Bebidas?"
+    ],
+    "nodes_visited": [
+      "node_2_1536694712100",
+      "handler_4_1536694807221",
+      "handler_8_1536694877396",
+      "slot_6_1536694877396"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "c82c52aa-9aa3-4221-9af1-78abf8497d9a",
+    "system": {
+      "dialog_request_counter": 2,
+      "dialog_turn_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_6_1536694877396",
+          "state": "in_progress"
+        }
+      ]
+    },
+    "telefone": [],
+    "pedido": "Pedido662",
+    "ler": "F",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": "",
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ]
+  }
+}{
+  "intents": [
+    {
+      "intent": "Negacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "nenhuma"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Agora por favor digite se numero de telefone para podermos te indentificar"
+      }
+    ],
+    "text": [
+      "Agora por favor digite se numero de telefone para podermos te indentificar"
+    ],
+    "nodes_visited": [
+      "slot_6_1536694877396",
+      "handler_15_1536696466543",
+      "node_2_1536694712100"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "c82c52aa-9aa3-4221-9af1-78abf8497d9a",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_2_1536694712100"
+        }
+      ],
+      "dialog_request_counter": 3,
+      "dialog_turn_counter": 3,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ]
+    },
+    "telefone": [],
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "frase": "ent\u00e3o \u00e9 1 calabresa e ",
+    "pedido": "Pedido662",
+    "preco": 20,
+    "ler": "F",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": ""
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6caef78c-e0cd-42db-b8a0-5ec18e0f0fad",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido164",
+    "obs": ""
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 0.9816842555999756
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        12,
+        15
+      ],
+      "value": "1",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 1
+      }
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        25,
+        34
+      ],
+      "value": "Calabresa",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "Gostaria de uma pizza de calabresa"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bebidas?"
+      }
+    ],
+    "text": [
+      "Bebidas?"
+    ],
+    "nodes_visited": [
+      "node_2_1536694712100",
+      "handler_4_1536694807221",
+      "handler_8_1536694877396",
+      "slot_6_1536694877396"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6caef78c-e0cd-42db-b8a0-5ec18e0f0fad",
+    "system": {
+      "dialog_request_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_turn_counter": 2,
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_6_1536694877396",
+          "state": "in_progress"
+        }
+      ]
+    },
+    "pedido": "Pedido164",
+    "ler": "F",
+    "obs": "",
+    "gravarende": "F",
+    "grava": "F",
+    "telefone": [],
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        1
+      ],
+      "value": "2",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 2
+      }
+    },
+    {
+      "entity": "Refrigerantes",
+      "location": [
+        2,
+        6
+      ],
+      "value": "coca cola",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "2 coca"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Agora por favor digite se numero de telefone para podermos te indentificar"
+      }
+    ],
+    "text": [
+      "Agora por favor digite se numero de telefone para podermos te indentificar"
+    ],
+    "nodes_visited": [
+      "slot_6_1536694877396",
+      "handler_7_1536694877396",
+      "node_2_1536694712100"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6caef78c-e0cd-42db-b8a0-5ec18e0f0fad",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_2_1536694712100"
+        }
+      ],
+      "dialog_turn_counter": 3,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_request_counter": 3
+    },
+    "pedido": "Pedido164",
+    "obs": "",
+    "preco": 20,
+    "gravarende": "F",
+    "ler": "F",
+    "frase": "ent\u00e3o \u00e9 1 calabresa e ",
+    "grava": "F",
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "telefone": [],
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        9
+      ],
+      "value": "998558024",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 998558024
+      }
+    }
+  ],
+  "input": {
+    "text": "998558024"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Alguma observa\u00e7\u00e3o no seu pedido ?"
+      }
+    ],
+    "text": [
+      "Alguma observa\u00e7\u00e3o no seu pedido ?"
+    ],
+    "nodes_visited": [
+      "node_19_1536697117956"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6caef78c-e0cd-42db-b8a0-5ec18e0f0fad",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_19_1536697117956"
+        }
+      ],
+      "dialog_turn_counter": 4,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_request_counter": 4
+    },
+    "ler": "V",
+    "pedido": "Pedido164",
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "obs": "",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "gravarende": "F",
+    "frase": "ent\u00e3o \u00e9 1 calabresa e junto com 2 coca e ",
+    "grava": "F",
+    "preco": 34,
+    "telefone": [
+      "998558024"
+    ]
+  }
+}{
+  "intents": [
+    {
+      "intent": "Negacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "nenhuma"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bem vindo de novo Rodrigo"
+      },
+      {
+        "response_type": "text",
+        "text": "ent\u00e3o \u00e9 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 34 reais?"
+      }
+    ],
+    "text": [
+      "Bem vindo de novo Rodrigo",
+      "ent\u00e3o \u00e9 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 34 reais?"
+    ],
+    "nodes_visited": [
+      "node_4_1537730868787",
+      "node_36_1537642067646",
+      "node_37_1537643158755"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6caef78c-e0cd-42db-b8a0-5ec18e0f0fad",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_37_1537643158755"
+        }
+      ],
+      "dialog_turn_counter": 5,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_request_counter": 5
+    },
+    "telefone": [
+      "998558024"
+    ],
+    "cende": "Bem vindo de novo Rodrigo",
+    "new": "s",
+    "pedido": "Pedido164",
+    "obs": "",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "ende": "Rua Guilherme Damini, 96",
+    "gravarende": "F",
+    "ler": "V",
+    "frase": "ent\u00e3o \u00e9 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 34 reais",
+    "grava": "F",
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "preco": 34,
+    "obspedido": "nenhuma"
+  }
+}{
+  "intents": [
+    {
+      "intent": "afrimacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "sim"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "qual a forma de pagamento?"
+      }
+    ],
+    "text": [
+      "qual a forma de pagamento?"
+    ],
+    "nodes_visited": [
+      "node_45_1537644973067"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6caef78c-e0cd-42db-b8a0-5ec18e0f0fad",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_45_1537644973067"
+        }
+      ],
+      "dialog_turn_counter": 6,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_request_counter": 6
+    },
+    "cende": "Bem vindo de novo Rodrigo",
+    "new": "s",
+    "pedido": "Pedido164",
+    "ler": "F",
+    "obs": "",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "ende": "Rua Guilherme Damini, 96",
+    "preco": 34,
+    "gravarende": "F",
+    "frase": "ent\u00e3o \u00e9 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 34 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 34 reais",
+    "grava": "F",
+    "obspedido": "nenhuma",
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "telefone": [
+      "998558024"
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "forma_pagamento",
+      "location": [
+        0,
+        8
+      ],
+      "value": "dinheiro",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "dinheiro"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Troco para quanto ?"
+      }
+    ],
+    "text": [
+      "Troco para quanto ?"
+    ],
+    "nodes_visited": [
+      "node_1_1538851201550"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6caef78c-e0cd-42db-b8a0-5ec18e0f0fad",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "node_1_1538851201550"
+        }
+      ],
+      "dialog_turn_counter": 7,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_request_counter": 7
+    },
+    "cende": "Bem vindo de novo Rodrigo",
+    "new": "s",
+    "pedido": "Pedido164",
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "obs": "",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "ende": "Rua Guilherme Damini, 96",
+    "gravarende": "F",
+    "ler": "F",
+    "frase": "ent\u00e3o \u00e9 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 34 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 34 reais",
+    "grava": "F",
+    "obspedido": "nenhuma",
+    "preco": 34,
+    "telefone": [
+      "998558024"
+    ],
+    "fpag": "dinheiro"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        2
+      ],
+      "value": "50",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 50
+      }
+    }
+  ],
+  "input": {
+    "text": "50"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido164"
+      }
+    ],
+    "text": [
+      "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido164"
+    ],
+    "nodes_visited": [
+      "node_2_1538852286483"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6caef78c-e0cd-42db-b8a0-5ec18e0f0fad",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 8,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1538852286483": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_request_counter": 8,
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "cende": "Bem vindo de novo Rodrigo",
+    "telefone": [
+      "998558024"
+    ],
+    "fpag": "dinheiro",
+    "new": "s",
+    "pedido": "Pedido164",
+    "ler": "F",
+    "obs": "",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "ende": "Rua Guilherme Damini, 96",
+    "gravarende": "F",
+    "frase": "ent\u00e3o \u00e9 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 34 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 34 reais",
+    "grava": "V",
+    "obspedido": "nenhuma",
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "preco": 34,
+    "tipoc": "50"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "e16104ac-0688-4d65-9383-611f6c4c3699",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido13",
+    "obs": ""
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 0.9091651439666748
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        12,
+        15
+      ],
+      "value": "1",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 1
+      }
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        19,
+        25
+      ],
+      "value": "Queijo",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "Gostaria de uma de queijo"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bebidas?"
+      }
+    ],
+    "text": [
+      "Bebidas?"
+    ],
+    "nodes_visited": [
+      "node_2_1536694712100",
+      "handler_4_1536694807221",
+      "handler_8_1536694877396",
+      "slot_6_1536694877396"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "e16104ac-0688-4d65-9383-611f6c4c3699",
+    "system": {
+      "dialog_request_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_6_1536694877396",
+          "state": "in_progress"
+        }
+      ],
+      "dialog_turn_counter": 2
+    },
+    "grava": "F",
+    "obs": "",
+    "ler": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "pedido": "Pedido13",
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ]
+  }
+}{
+  "intents": [
+    {
+      "intent": "Negacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "nenhuma"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Agora por favor digite se numero de telefone para podermos te indentificar"
+      }
+    ],
+    "text": [
+      "Agora por favor digite se numero de telefone para podermos te indentificar"
+    ],
+    "nodes_visited": [
+      "slot_6_1536694877396",
+      "handler_15_1536696466543",
+      "node_2_1536694712100"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "e16104ac-0688-4d65-9383-611f6c4c3699",
+    "system": {
+      "dialog_turn_counter": 3,
+      "dialog_request_counter": 3,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_2_1536694712100"
+        }
+      ],
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ]
+    },
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "grava": "F",
+    "frase": "ent\u00e3o \u00e9 1 queijo e ",
+    "obs": "",
+    "ler": "F",
+    "preco": 20,
+    "gravarende": "F",
+    "telefone": [],
+    "pedido": "Pedido13"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        9
+      ],
+      "value": "123456789",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 123456789
+      }
+    }
+  ],
+  "input": {
+    "text": "123456789"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Alguma observa\u00e7\u00e3o no seu pedido ?"
+      }
+    ],
+    "text": [
+      "Alguma observa\u00e7\u00e3o no seu pedido ?"
+    ],
+    "nodes_visited": [
+      "node_19_1536697117956"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "e16104ac-0688-4d65-9383-611f6c4c3699",
+    "system": {
+      "dialog_request_counter": 4,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_19_1536697117956"
+        }
+      ],
+      "dialog_turn_counter": 4
+    },
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "frase": "ent\u00e3o \u00e9 1 queijo e ",
+    "obs": "",
+    "ler": "V",
+    "gravarende": "F",
+    "preco": 20,
+    "grava": "F",
+    "telefone": [
+      "123456789"
+    ],
+    "pedido": "Pedido13"
+  }
+}{
+  "intents": [
+    {
+      "intent": "Negacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "nenhuma"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Pelo visto voc\u00ea n\u00e3o tem cadastro"
+      },
+      {
+        "response_type": "text",
+        "text": "Qual seria o endere\u00e7o ent\u00e3o?"
+      }
+    ],
+    "text": [
+      "Pelo visto voc\u00ea n\u00e3o tem cadastro",
+      "Qual seria o endere\u00e7o ent\u00e3o?"
+    ],
+    "nodes_visited": [
+      "node_4_1537730868787",
+      "node_36_1537642067646",
+      "node_38_1537643170920"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "e16104ac-0688-4d65-9383-611f6c4c3699",
+    "system": {
+      "dialog_request_counter": 5,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_38_1537643170920"
+        }
+      ],
+      "dialog_turn_counter": 5
+    },
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "grava": "F",
+    "new": "n",
+    "frase": "ent\u00e3o \u00e9 1 queijo e ",
+    "obs": "",
+    "cende": "Pelo visto voc\u00ea n\u00e3o tem cadastro",
+    "ler": "V",
+    "preco": 20,
+    "gravarende": "F",
+    "telefone": [
+      "123456789"
+    ],
+    "pedido": "Pedido13",
+    "obspedido": "nenhuma"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        13,
+        15
+      ],
+      "value": "0",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 0
+      }
+    }
+  ],
+  "input": {
+    "text": "Rua seilaoq, 00"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Digie o nome que vai ser registrado"
+      }
+    ],
+    "text": [
+      "Digie o nome que vai ser registrado"
+    ],
+    "nodes_visited": [
+      "node_1_1537648252854"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "e16104ac-0688-4d65-9383-611f6c4c3699",
+    "system": {
+      "dialog_request_counter": 6,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_1_1537648252854"
+        }
+      ],
+      "dialog_turn_counter": 6
+    },
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "new": "n",
+    "frase": "ent\u00e3o \u00e9 1 queijo e ",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "cende": "Pelo visto voc\u00ea n\u00e3o tem cadastro",
+    "ler": "V",
+    "gravarende": "F",
+    "preco": 20,
+    "grava": "F",
+    "telefone": [
+      "123456789"
+    ],
+    "pedido": "Pedido13",
+    "ende": "Rua seilaoq, 00"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {
+    "text": "Pessoa"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "ent\u00e3o \u00e9 o endere\u00e7o Rua seilaoq, 00 para Pessoa?"
+      }
+    ],
+    "text": [
+      "ent\u00e3o \u00e9 o endere\u00e7o Rua seilaoq, 00 para Pessoa?"
+    ],
+    "nodes_visited": [
+      "node_41_1537644497599"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "e16104ac-0688-4d65-9383-611f6c4c3699",
+    "system": {
+      "dialog_request_counter": 7,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        },
+        "node_41_1537644497599": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_41_1537644497599"
+        }
+      ],
+      "dialog_turn_counter": 7
+    },
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "grava": "F",
+    "new": "n",
+    "ende": "Rua seilaoq, 00",
+    "frase": "ent\u00e3o \u00e9 1 queijo e ",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "cende": "Pelo visto voc\u00ea n\u00e3o tem cadastro",
+    "ler": "V",
+    "preco": 20,
+    "gravarende": "F",
+    "telefone": [
+      "123456789"
+    ],
+    "pedido": "Pedido13",
+    "nome": "Pessoa"
+  }
+}{
+  "intents": [
+    {
+      "intent": "afrimacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "sim"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "ent\u00e3o \u00e9 1 queijo e   entregar no endere\u00e7o Rua seilaoq, 00 pelo pre\u00e7o de 20?"
+      }
+    ],
+    "text": [
+      "ent\u00e3o \u00e9 1 queijo e   entregar no endere\u00e7o Rua seilaoq, 00 pelo pre\u00e7o de 20?"
+    ],
+    "nodes_visited": [
+      "node_43_1537644582419",
+      "node_1_1537905763796"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "e16104ac-0688-4d65-9383-611f6c4c3699",
+    "system": {
+      "dialog_request_counter": 8,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        },
+        "node_41_1537644497599": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537905763796": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_1_1537905763796"
+        }
+      ],
+      "dialog_turn_counter": 8
+    },
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "ende": "Rua seilaoq, 00",
+    "new": "t",
+    "frase": "ent\u00e3o \u00e9 1 queijo e ",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "cende": "Pelo visto voc\u00ea n\u00e3o tem cadastro",
+    "ler": "V",
+    "gravarende": "V",
+    "preco": 20,
+    "grava": "a",
+    "telefone": [
+      "123456789"
+    ],
+    "nome": "Pessoa",
+    "pedido": "Pedido13"
+  }
+}{
+  "intents": [
+    {
+      "intent": "afrimacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "sim"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "qual a forma de pagamento?"
+      }
+    ],
+    "text": [
+      "qual a forma de pagamento?"
+    ],
+    "nodes_visited": [
+      "node_45_1537644973067"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "e16104ac-0688-4d65-9383-611f6c4c3699",
+    "system": {
+      "dialog_request_counter": 9,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        },
+        "node_41_1537644497599": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537905763796": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_45_1537644973067"
+        }
+      ],
+      "dialog_turn_counter": 9
+    },
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "grava": "a",
+    "new": "s",
+    "ende": "Rua seilaoq, 00",
+    "frase": "ent\u00e3o \u00e9 1 queijo e entregar no endere\u00e7o Rua seilaoq, 00 pelo pre\u00e7o de 20 reais",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "cende": "Bem vindo de novo Pessoa",
+    "ler": "F",
+    "preco": 20,
+    "gravarende": "F",
+    "telefone": [
+      "123456789"
+    ],
+    "nome": "Pessoa",
+    "pedido": "Pedido13"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "forma_pagamento",
+      "location": [
+        0,
+        8
+      ],
+      "value": "dinheiro",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "dinheiro"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Troco para quanto ?"
+      }
+    ],
+    "text": [
+      "Troco para quanto ?"
+    ],
+    "nodes_visited": [
+      "node_1_1538851201550"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "e16104ac-0688-4d65-9383-611f6c4c3699",
+    "system": {
+      "dialog_request_counter": 10,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        },
+        "node_41_1537644497599": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537905763796": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_1_1538851201550"
+        }
+      ],
+      "dialog_turn_counter": 10
+    },
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "ende": "Rua seilaoq, 00",
+    "new": "s",
+    "frase": "ent\u00e3o \u00e9 1 queijo e entregar no endere\u00e7o Rua seilaoq, 00 pelo pre\u00e7o de 20 reais",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "cende": "Bem vindo de novo Pessoa",
+    "ler": "F",
+    "gravarende": "F",
+    "preco": 20,
+    "grava": "a",
+    "telefone": [
+      "123456789"
+    ],
+    "nome": "Pessoa",
+    "pedido": "Pedido13",
+    "fpag": "dinheiro"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        2
+      ],
+      "value": "20",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 20
+      }
+    }
+  ],
+  "input": {
+    "text": "20"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido13"
+      }
+    ],
+    "text": [
+      "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido13"
+    ],
+    "nodes_visited": [
+      "node_2_1538852286483"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "e16104ac-0688-4d65-9383-611f6c4c3699",
+    "system": {
+      "dialog_request_counter": 11,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        },
+        "node_41_1537644497599": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537905763796": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1538852286483": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 11,
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "Sabores": [
+      [
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "grava": "V",
+    "new": "s",
+    "ende": "Rua seilaoq, 00",
+    "fpag": "dinheiro",
+    "frase": "ent\u00e3o \u00e9 1 queijo e entregar no endere\u00e7o Rua seilaoq, 00 pelo pre\u00e7o de 20 reais",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "cende": "Bem vindo de novo Pessoa",
+    "ler": "F",
+    "preco": 20,
+    "gravarende": "F",
+    "telefone": [
+      "123456789"
+    ],
+    "nome": "Pessoa",
+    "pedido": "Pedido13",
+    "tipoc": "20"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "47191cb1-5b6d-4093-b331-c2410c9ed821",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido382",
+    "obs": ""
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 0.9816842555999756
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        12,
+        15
+      ],
+      "value": "1",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 1
+      }
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        25,
+        34
+      ],
+      "value": "Calabresa",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "Gostaria de uma pizza de calabresa"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bebidas?"
+      }
+    ],
+    "text": [
+      "Bebidas?"
+    ],
+    "nodes_visited": [
+      "node_2_1536694712100",
+      "handler_4_1536694807221",
+      "handler_8_1536694877396",
+      "slot_6_1536694877396"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "47191cb1-5b6d-4093-b331-c2410c9ed821",
+    "system": {
+      "dialog_request_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_6_1536694877396",
+          "state": "in_progress"
+        }
+      ],
+      "dialog_turn_counter": 2
+    },
+    "grava": "F",
+    "obs": "",
+    "ler": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "pedido": "Pedido382",
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        3
+      ],
+      "value": "1",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 1
+      }
+    },
+    {
+      "entity": "Refrigerantes",
+      "location": [
+        4,
+        8
+      ],
+      "value": "coca cola",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "uma coca"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Agora por favor digite se numero de telefone para podermos te indentificar"
+      }
+    ],
+    "text": [
+      "Agora por favor digite se numero de telefone para podermos te indentificar"
+    ],
+    "nodes_visited": [
+      "slot_6_1536694877396",
+      "handler_7_1536694877396",
+      "node_2_1536694712100"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "47191cb1-5b6d-4093-b331-c2410c9ed821",
+    "system": {
+      "dialog_turn_counter": 3,
+      "dialog_request_counter": 3,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_2_1536694712100"
+        }
+      ]
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "grava": "F",
+    "frase": "ent\u00e3o \u00e9 1 calabresa e ",
+    "obs": "",
+    "ler": "F",
+    "preco": 20,
+    "gravarende": "F",
+    "telefone": [],
+    "pedido": "Pedido382",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "1"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        9
+      ],
+      "value": "987654321",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 987654321
+      }
+    }
+  ],
+  "input": {
+    "text": "987654321"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Alguma observa\u00e7\u00e3o no seu pedido ?"
+      }
+    ],
+    "text": [
+      "Alguma observa\u00e7\u00e3o no seu pedido ?"
+    ],
+    "nodes_visited": [
+      "node_19_1536697117956"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "47191cb1-5b6d-4093-b331-c2410c9ed821",
+    "system": {
+      "dialog_turn_counter": 4,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_19_1536697117956"
+        }
+      ],
+      "dialog_request_counter": 4
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "frase": "ent\u00e3o \u00e9 1 calabresa e junto com 1 coca e ",
+    "obs": "",
+    "ler": "V",
+    "gravarende": "F",
+    "preco": 27,
+    "grava": "F",
+    "telefone": [
+      "987654321"
+    ],
+    "pedido": "Pedido382"
+  }
+}{
+  "intents": [
+    {
+      "intent": "Negacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "nenhuma"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Pelo visto voc\u00ea n\u00e3o tem cadastro"
+      },
+      {
+        "response_type": "text",
+        "text": "Qual seria o endere\u00e7o ent\u00e3o?"
+      }
+    ],
+    "text": [
+      "Pelo visto voc\u00ea n\u00e3o tem cadastro",
+      "Qual seria o endere\u00e7o ent\u00e3o?"
+    ],
+    "nodes_visited": [
+      "node_4_1537730868787",
+      "node_36_1537642067646",
+      "node_38_1537643170920"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "47191cb1-5b6d-4093-b331-c2410c9ed821",
+    "system": {
+      "dialog_turn_counter": 5,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_38_1537643170920"
+        }
+      ],
+      "dialog_request_counter": 5
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "grava": "F",
+    "new": "n",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "frase": "ent\u00e3o \u00e9 1 calabresa e junto com 1 coca e ",
+    "obs": "",
+    "cende": "Pelo visto voc\u00ea n\u00e3o tem cadastro",
+    "ler": "V",
+    "preco": 27,
+    "gravarende": "F",
+    "telefone": [
+      "987654321"
+    ],
+    "pedido": "Pedido382",
+    "obspedido": "nenhuma"
+  }
+}{
+  "intents": [
+    {
+      "intent": "Ola",
+      "confidence": 0.5505667924880981
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "Nem sei"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Digie o nome que vai ser registrado"
+      }
+    ],
+    "text": [
+      "Digie o nome que vai ser registrado"
+    ],
+    "nodes_visited": [
+      "node_1_1537648252854"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "47191cb1-5b6d-4093-b331-c2410c9ed821",
+    "system": {
+      "dialog_turn_counter": 6,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_1_1537648252854"
+        }
+      ],
+      "dialog_request_counter": 6
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "new": "n",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "frase": "ent\u00e3o \u00e9 1 calabresa e junto com 1 coca e ",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "cende": "Pelo visto voc\u00ea n\u00e3o tem cadastro",
+    "ler": "V",
+    "gravarende": "F",
+    "preco": 27,
+    "grava": "F",
+    "telefone": [
+      "987654321"
+    ],
+    "pedido": "Pedido382",
+    "ende": "Nem sei"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {
+    "text": "Nensei"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "ent\u00e3o \u00e9 o endere\u00e7o Nem sei para Nensei?"
+      }
+    ],
+    "text": [
+      "ent\u00e3o \u00e9 o endere\u00e7o Nem sei para Nensei?"
+    ],
+    "nodes_visited": [
+      "node_41_1537644497599"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "47191cb1-5b6d-4093-b331-c2410c9ed821",
+    "system": {
+      "dialog_turn_counter": 7,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        },
+        "node_41_1537644497599": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_41_1537644497599"
+        }
+      ],
+      "dialog_request_counter": 7
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "grava": "F",
+    "new": "n",
+    "ende": "Nem sei",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "frase": "ent\u00e3o \u00e9 1 calabresa e junto com 1 coca e ",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "cende": "Pelo visto voc\u00ea n\u00e3o tem cadastro",
+    "ler": "V",
+    "preco": 27,
+    "gravarende": "F",
+    "telefone": [
+      "987654321"
+    ],
+    "pedido": "Pedido382",
+    "nome": "Nensei"
+  }
+}{
+  "intents": [
+    {
+      "intent": "afrimacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "sim"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "ent\u00e3o \u00e9 1 calabresa e junto com 1 coca e   entregar no endere\u00e7o Nem sei pelo pre\u00e7o de 27?"
+      }
+    ],
+    "text": [
+      "ent\u00e3o \u00e9 1 calabresa e junto com 1 coca e   entregar no endere\u00e7o Nem sei pelo pre\u00e7o de 27?"
+    ],
+    "nodes_visited": [
+      "node_43_1537644582419",
+      "node_1_1537905763796"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "47191cb1-5b6d-4093-b331-c2410c9ed821",
+    "system": {
+      "dialog_turn_counter": 8,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        },
+        "node_41_1537644497599": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537905763796": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_1_1537905763796"
+        }
+      ],
+      "dialog_request_counter": 8
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "ende": "Nem sei",
+    "new": "t",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "frase": "ent\u00e3o \u00e9 1 calabresa e junto com 1 coca e ",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "cende": "Pelo visto voc\u00ea n\u00e3o tem cadastro",
+    "ler": "V",
+    "gravarende": "V",
+    "preco": 27,
+    "grava": "a",
+    "telefone": [
+      "987654321"
+    ],
+    "nome": "Nensei",
+    "pedido": "Pedido382"
+  }
+}{
+  "intents": [
+    {
+      "intent": "afrimacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "sim"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "qual a forma de pagamento?"
+      }
+    ],
+    "text": [
+      "qual a forma de pagamento?"
+    ],
+    "nodes_visited": [
+      "node_45_1537644973067"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "47191cb1-5b6d-4093-b331-c2410c9ed821",
+    "system": {
+      "dialog_turn_counter": 9,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        },
+        "node_41_1537644497599": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537905763796": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_45_1537644973067"
+        }
+      ],
+      "dialog_request_counter": 9
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "grava": "a",
+    "new": "s",
+    "ende": "Nem sei",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "frase": "ent\u00e3o \u00e9 1 calabresa e junto com 1 coca e entregar no endere\u00e7o Nem sei pelo pre\u00e7o de 27 reais",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "cende": "Bem vindo de novo Nensei",
+    "ler": "F",
+    "preco": 27,
+    "gravarende": "F",
+    "telefone": [
+      "987654321"
+    ],
+    "nome": "Nensei",
+    "pedido": "Pedido382"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "forma_pagamento",
+      "location": [
+        0,
+        8
+      ],
+      "value": "dinheiro",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "dinheiro"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Troco para quanto ?"
+      }
+    ],
+    "text": [
+      "Troco para quanto ?"
+    ],
+    "nodes_visited": [
+      "node_1_1538851201550"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "47191cb1-5b6d-4093-b331-c2410c9ed821",
+    "system": {
+      "dialog_turn_counter": 10,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        },
+        "node_41_1537644497599": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537905763796": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_1_1538851201550"
+        }
+      ],
+      "dialog_request_counter": 10
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "ende": "Nem sei",
+    "new": "s",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "frase": "ent\u00e3o \u00e9 1 calabresa e junto com 1 coca e entregar no endere\u00e7o Nem sei pelo pre\u00e7o de 27 reais",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "cende": "Bem vindo de novo Nensei",
+    "ler": "F",
+    "gravarende": "F",
+    "preco": 27,
+    "grava": "a",
+    "telefone": [
+      "987654321"
+    ],
+    "nome": "Nensei",
+    "pedido": "Pedido382",
+    "fpag": "dinheiro"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        2
+      ],
+      "value": "50",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 50
+      }
+    }
+  ],
+  "input": {
+    "text": "50"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido382"
+      }
+    ],
+    "text": [
+      "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido382"
+    ],
+    "nodes_visited": [
+      "node_2_1538852286483"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "47191cb1-5b6d-4093-b331-c2410c9ed821",
+    "system": {
+      "dialog_turn_counter": 11,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        },
+        "node_41_1537644497599": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537905763796": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1538852286483": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_request_counter": 11,
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "grava": "V",
+    "new": "s",
+    "ende": "Nem sei",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "frase": "ent\u00e3o \u00e9 1 calabresa e junto com 1 coca e entregar no endere\u00e7o Nem sei pelo pre\u00e7o de 27 reais",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "fpag": "dinheiro",
+    "cende": "Bem vindo de novo Nensei",
+    "ler": "F",
+    "preco": 27,
+    "gravarende": "F",
+    "telefone": [
+      "987654321"
+    ],
+    "nome": "Nensei",
+    "pedido": "Pedido382",
+    "tipoc": "50"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "027270a1-5084-4d64-b4d4-81110c77b943",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido10",
+    "obs": ""
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 0.918828296661377
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        12,
+        15
+      ],
+      "value": "1",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 1
+      }
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        19,
+        25
+      ],
+      "value": "Queijo",
+      "confidence": 1
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        37,
+        46
+      ],
+      "value": "Calabresa",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "Gostaria de uma de queijo e outra de calabresa"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bebidas?"
+      }
+    ],
+    "text": [
+      "Bebidas?"
+    ],
+    "nodes_visited": [
+      "node_2_1536694712100",
+      "handler_4_1536694807221",
+      "handler_8_1536694877396",
+      "slot_6_1536694877396"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "027270a1-5084-4d64-b4d4-81110c77b943",
+    "system": {
+      "dialog_request_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_6_1536694877396",
+          "state": "in_progress"
+        }
+      ],
+      "dialog_turn_counter": 2
+    },
+    "grava": "F",
+    "obs": "",
+    "ler": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "pedido": "Pedido10",
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        1
+      ],
+      "value": "2",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 2
+      }
+    },
+    {
+      "entity": "Refrigerantes",
+      "location": [
+        2,
+        6
+      ],
+      "value": "coca cola",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "2 coca"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Agora por favor digite se numero de telefone para podermos te indentificar"
+      }
+    ],
+    "text": [
+      "Agora por favor digite se numero de telefone para podermos te indentificar"
+    ],
+    "nodes_visited": [
+      "slot_6_1536694877396",
+      "handler_7_1536694877396",
+      "node_2_1536694712100"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "027270a1-5084-4d64-b4d4-81110c77b943",
+    "system": {
+      "dialog_turn_counter": 3,
+      "dialog_request_counter": 3,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_2_1536694712100"
+        }
+      ]
+    },
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "grava": "F",
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e ",
+    "obs": "",
+    "ler": "F",
+    "preco": 40,
+    "gravarende": "F",
+    "telefone": [],
+    "pedido": "Pedido10",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        9
+      ],
+      "value": "998558024",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 998558024
+      }
+    }
+  ],
+  "input": {
+    "text": "998558024"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Alguma observa\u00e7\u00e3o no seu pedido ?"
+      }
+    ],
+    "text": [
+      "Alguma observa\u00e7\u00e3o no seu pedido ?"
+    ],
+    "nodes_visited": [
+      "node_19_1536697117956"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "027270a1-5084-4d64-b4d4-81110c77b943",
+    "system": {
+      "dialog_turn_counter": 4,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_19_1536697117956"
+        }
+      ],
+      "dialog_request_counter": 4
+    },
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e ",
+    "obs": "",
+    "ler": "V",
+    "gravarende": "F",
+    "preco": 54,
+    "grava": "F",
+    "telefone": [
+      "998558024"
+    ],
+    "pedido": "Pedido10"
+  }
+}{
+  "intents": [
+    {
+      "intent": "Negacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "nenhuma"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bem vindo de novo Rodrigo"
+      },
+      {
+        "response_type": "text",
+        "text": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais?"
+      }
+    ],
+    "text": [
+      "Bem vindo de novo Rodrigo",
+      "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais?"
+    ],
+    "nodes_visited": [
+      "node_4_1537730868787",
+      "node_36_1537642067646",
+      "node_37_1537643158755"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "027270a1-5084-4d64-b4d4-81110c77b943",
+    "system": {
+      "dialog_turn_counter": 5,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_37_1537643158755"
+        }
+      ],
+      "dialog_request_counter": 5
+    },
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "grava": "F",
+    "new": "s",
+    "ende": "Rua Guilherme Damini, 96",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais",
+    "obs": "",
+    "cende": "Bem vindo de novo Rodrigo",
+    "ler": "V",
+    "preco": 54,
+    "gravarende": "F",
+    "telefone": [
+      "998558024"
+    ],
+    "pedido": "Pedido10",
+    "obspedido": "nenhuma"
+  }
+}{
+  "intents": [
+    {
+      "intent": "afrimacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "sim"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "qual a forma de pagamento?"
+      }
+    ],
+    "text": [
+      "qual a forma de pagamento?"
+    ],
+    "nodes_visited": [
+      "node_45_1537644973067"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "027270a1-5084-4d64-b4d4-81110c77b943",
+    "system": {
+      "dialog_turn_counter": 6,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_45_1537644973067"
+        }
+      ],
+      "dialog_request_counter": 6
+    },
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "ende": "Rua Guilherme Damini, 96",
+    "new": "s",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "cende": "Bem vindo de novo Rodrigo",
+    "ler": "F",
+    "gravarende": "F",
+    "preco": 54,
+    "grava": "F",
+    "telefone": [
+      "998558024"
+    ],
+    "pedido": "Pedido10"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "forma_pagamento",
+      "location": [
+        0,
+        8
+      ],
+      "value": "dinheiro",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "dinheiro"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Troco para quanto ?"
+      }
+    ],
+    "text": [
+      "Troco para quanto ?"
+    ],
+    "nodes_visited": [
+      "node_1_1538851201550"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "027270a1-5084-4d64-b4d4-81110c77b943",
+    "system": {
+      "dialog_turn_counter": 7,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_1_1538851201550"
+        }
+      ],
+      "dialog_request_counter": 7
+    },
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "grava": "F",
+    "new": "s",
+    "ende": "Rua Guilherme Damini, 96",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "cende": "Bem vindo de novo Rodrigo",
+    "ler": "F",
+    "preco": 54,
+    "gravarende": "F",
+    "telefone": [
+      "998558024"
+    ],
+    "pedido": "Pedido10",
+    "fpag": "dinheiro"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        3
+      ],
+      "value": "100",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 100
+      }
+    }
+  ],
+  "input": {
+    "text": "100"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido10"
+      }
+    ],
+    "text": [
+      "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido10"
+    ],
+    "nodes_visited": [
+      "node_2_1538852286483"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "027270a1-5084-4d64-b4d4-81110c77b943",
+    "system": {
+      "dialog_turn_counter": 8,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1538852286483": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_request_counter": 8,
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "ende": "Rua Guilherme Damini, 96",
+    "new": "s",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "fpag": "dinheiro",
+    "cende": "Bem vindo de novo Rodrigo",
+    "ler": "F",
+    "gravarende": "F",
+    "preco": 54,
+    "grava": "V",
+    "telefone": [
+      "998558024"
+    ],
+    "pedido": "Pedido10",
+    "tipoc": "100"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "f7e846b2-5fda-4bb3-8eeb-e9f7b308289b",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido245",
+    "obs": ""
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 0.988258457183838
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        12,
+        15
+      ],
+      "value": "1",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 1
+      }
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        25,
+        31
+      ],
+      "value": "Queijo",
+      "confidence": 1
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        43,
+        52
+      ],
+      "value": "Calabresa",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "Gostaria de uma pizza de queijo e outra de calabresa"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bebidas?"
+      }
+    ],
+    "text": [
+      "Bebidas?"
+    ],
+    "nodes_visited": [
+      "node_2_1536694712100",
+      "handler_4_1536694807221",
+      "handler_8_1536694877396",
+      "slot_6_1536694877396"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "f7e846b2-5fda-4bb3-8eeb-e9f7b308289b",
+    "system": {
+      "dialog_request_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_6_1536694877396",
+          "state": "in_progress"
+        }
+      ],
+      "dialog_turn_counter": 2
+    },
+    "grava": "F",
+    "obs": "",
+    "ler": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "pedido": "Pedido245",
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        1
+      ],
+      "value": "2",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 2
+      }
+    },
+    {
+      "entity": "Refrigerantes",
+      "location": [
+        2,
+        6
+      ],
+      "value": "coca cola",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "2 coca"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Agora por favor digite se numero de telefone para podermos te indentificar"
+      }
+    ],
+    "text": [
+      "Agora por favor digite se numero de telefone para podermos te indentificar"
+    ],
+    "nodes_visited": [
+      "slot_6_1536694877396",
+      "handler_7_1536694877396",
+      "node_2_1536694712100"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "f7e846b2-5fda-4bb3-8eeb-e9f7b308289b",
+    "system": {
+      "dialog_turn_counter": 3,
+      "dialog_request_counter": 3,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_2_1536694712100"
+        }
+      ]
+    },
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "grava": "F",
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e ",
+    "obs": "",
+    "ler": "F",
+    "preco": 40,
+    "gravarende": "F",
+    "telefone": [],
+    "pedido": "Pedido245",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ]
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        9
+      ],
+      "value": "998558024",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 998558024
+      }
+    }
+  ],
+  "input": {
+    "text": "998558024"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Alguma observa\u00e7\u00e3o no seu pedido ?"
+      }
+    ],
+    "text": [
+      "Alguma observa\u00e7\u00e3o no seu pedido ?"
+    ],
+    "nodes_visited": [
+      "node_19_1536697117956"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "f7e846b2-5fda-4bb3-8eeb-e9f7b308289b",
+    "system": {
+      "dialog_turn_counter": 4,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_19_1536697117956"
+        }
+      ],
+      "dialog_request_counter": 4
+    },
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e ",
+    "obs": "",
+    "ler": "V",
+    "gravarende": "F",
+    "preco": 54,
+    "grava": "F",
+    "telefone": [
+      "998558024"
+    ],
+    "pedido": "Pedido245"
+  }
+}{
+  "intents": [
+    {
+      "intent": "Negacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "nenhuma"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bem vindo de novo Rodrigo"
+      },
+      {
+        "response_type": "text",
+        "text": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais?"
+      }
+    ],
+    "text": [
+      "Bem vindo de novo Rodrigo",
+      "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais?"
+    ],
+    "nodes_visited": [
+      "node_4_1537730868787",
+      "node_36_1537642067646",
+      "node_37_1537643158755"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "f7e846b2-5fda-4bb3-8eeb-e9f7b308289b",
+    "system": {
+      "dialog_turn_counter": 5,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_37_1537643158755"
+        }
+      ],
+      "dialog_request_counter": 5
+    },
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "grava": "F",
+    "new": "s",
+    "ende": "Rua Guilherme Damini, 96",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais",
+    "obs": "",
+    "cende": "Bem vindo de novo Rodrigo",
+    "ler": "V",
+    "preco": 54,
+    "gravarende": "F",
+    "telefone": [
+      "998558024"
+    ],
+    "pedido": "Pedido245",
+    "obspedido": "nenhuma"
+  }
+}{
+  "intents": [
+    {
+      "intent": "afrimacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "sim"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "qual a forma de pagamento?"
+      }
+    ],
+    "text": [
+      "qual a forma de pagamento?"
+    ],
+    "nodes_visited": [
+      "node_45_1537644973067"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "f7e846b2-5fda-4bb3-8eeb-e9f7b308289b",
+    "system": {
+      "dialog_turn_counter": 6,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_45_1537644973067"
+        }
+      ],
+      "dialog_request_counter": 6
+    },
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "ende": "Rua Guilherme Damini, 96",
+    "new": "s",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "cende": "Bem vindo de novo Rodrigo",
+    "ler": "F",
+    "gravarende": "F",
+    "preco": 54,
+    "grava": "F",
+    "telefone": [
+      "998558024"
+    ],
+    "pedido": "Pedido245"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "forma_pagamento",
+      "location": [
+        0,
+        8
+      ],
+      "value": "dinheiro",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "dinheiro"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Troco para quanto ?"
+      }
+    ],
+    "text": [
+      "Troco para quanto ?"
+    ],
+    "nodes_visited": [
+      "node_1_1538851201550"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "f7e846b2-5fda-4bb3-8eeb-e9f7b308289b",
+    "system": {
+      "dialog_turn_counter": 7,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_1_1538851201550"
+        }
+      ],
+      "dialog_request_counter": 7
+    },
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "grava": "F",
+    "new": "s",
+    "ende": "Rua Guilherme Damini, 96",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "cende": "Bem vindo de novo Rodrigo",
+    "ler": "F",
+    "preco": 54,
+    "gravarende": "F",
+    "telefone": [
+      "998558024"
+    ],
+    "pedido": "Pedido245",
+    "fpag": "dinheiro"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        3
+      ],
+      "value": "100",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 100
+      }
+    }
+  ],
+  "input": {
+    "text": "100"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido245"
+      }
+    ],
+    "text": [
+      "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido245"
+    ],
+    "nodes_visited": [
+      "node_2_1538852286483"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "f7e846b2-5fda-4bb3-8eeb-e9f7b308289b",
+    "system": {
+      "dialog_turn_counter": 8,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1538852286483": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_request_counter": 8,
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "Sabores": [
+      [
+        "Queijo",
+        "Calabresa"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "ende": "Rua Guilherme Damini, 96",
+    "new": "s",
+    "Refrigerantes": [
+      [
+        "coca cola"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "frase": "ent\u00e3o s\u00e3o 1 queijo, 1 calabresa e junto com 2 coca e entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reaisentregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 54 reais",
+    "obspedido": "nenhuma",
+    "obs": "",
+    "fpag": "dinheiro",
+    "cende": "Bem vindo de novo Rodrigo",
+    "ler": "F",
+    "gravarende": "F",
+    "preco": 54,
+    "grava": "V",
+    "telefone": [
+      "998558024"
+    ],
+    "pedido": "Pedido245",
+    "tipoc": "100"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "0ee1b8d6-ba30-437c-964a-8fdc439fb6ac",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido463",
+    "obs": "",
+    "zerar": "F"
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 0.986144733428955
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        18,
+        20
+      ],
+      "value": "1",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 1
+      }
+    }
+  ],
+  "input": {
+    "text": "Gostaria de fazer um pedido"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Quais sabores de pizza gostaria?"
+      }
+    ],
+    "text": [
+      "Quais sabores de pizza gostaria?"
+    ],
+    "nodes_visited": [
+      "node_2_1536694712100",
+      "handler_5_1536694807221",
+      "slot_3_1536694807221"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "0ee1b8d6-ba30-437c-964a-8fdc439fb6ac",
+    "system": {
+      "dialog_turn_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_3_1536694807221",
+          "state": "in_progress"
+        }
+      ],
+      "dialog_request_counter": 2
+    },
+    "telefone": [],
+    "gravarende": "F",
+    "obs": "",
+    "pedido": "Pedido463",
+    "grava": "F",
+    "ler": "F",
+    "zerar": "F"
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 0.21614836463545545
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        3
+      ],
+      "value": "1",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 1
+      }
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        7,
+        16
+      ],
+      "value": "Calabresa",
+      "confidence": 1
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        28,
+        34
+      ],
+      "value": "Queijo",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "uma de calabresa e outra de queijo"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bebidas?"
+      }
+    ],
+    "text": [
+      "Bebidas?"
+    ],
+    "nodes_visited": [
+      "slot_3_1536694807221",
+      "handler_4_1536694807221",
+      "handler_8_1536694877396",
+      "slot_6_1536694877396"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "0ee1b8d6-ba30-437c-964a-8fdc439fb6ac",
+    "system": {
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_turn_counter": 3,
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_6_1536694877396",
+          "state": "in_progress"
+        }
+      ],
+      "dialog_request_counter": 3
+    },
+    "telefone": [],
+    "gravarende": "F",
+    "obs": "",
+    "pedido": "Pedido463",
+    "grava": "F",
+    "ler": "F",
+    "zerar": "F",
+    "Sabores": [
+      [
+        "Calabresa",
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ]
+  }
+}{
+  "intents": [
+    {
+      "intent": "Negacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "nenhuma"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Agora por favor digite seu numero de telefone para podermos te indentificar"
+      }
+    ],
+    "text": [
+      "Agora por favor digite seu numero de telefone para podermos te indentificar"
+    ],
+    "nodes_visited": [
+      "slot_6_1536694877396",
+      "handler_15_1536696466543",
+      "node_2_1536694712100"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "0ee1b8d6-ba30-437c-964a-8fdc439fb6ac",
+    "system": {
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_turn_counter": 4,
+      "dialog_stack": [
+        {
+          "dialog_node": "node_2_1536694712100"
+        }
+      ],
+      "dialog_request_counter": 4,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ]
+    },
+    "Sabores": [
+      [
+        "Calabresa",
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "telefone": [],
+    "frase": " s\u00e3o 1 calabresa, 1 queijo e ",
+    "gravarende": "F",
+    "obs": "",
+    "pedido": "Pedido463",
+    "preco": 40,
+    "grava": "F",
+    "ler": "F",
+    "zerar": "F"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        9
+      ],
+      "value": "998558024",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 998558024
+      }
+    }
+  ],
+  "input": {
+    "text": "998558024"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Alguma observa\u00e7\u00e3o no seu pedido ?"
+      }
+    ],
+    "text": [
+      "Alguma observa\u00e7\u00e3o no seu pedido ?"
+    ],
+    "nodes_visited": [
+      "node_19_1536697117956"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "0ee1b8d6-ba30-437c-964a-8fdc439fb6ac",
+    "system": {
+      "dialog_turn_counter": 5,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_19_1536697117956"
+        }
+      ],
+      "dialog_request_counter": 5
+    },
+    "Sabores": [
+      [
+        "Calabresa",
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "telefone": [
+      "998558024"
+    ],
+    "frase": " s\u00e3o 1 calabresa, 1 queijo e ",
+    "gravarende": "F",
+    "obs": "",
+    "pedido": "Pedido463",
+    "preco": 40,
+    "grava": "F",
+    "ler": "V",
+    "zerar": "F"
+  }
+}{
+  "intents": [
+    {
+      "intent": "Negacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "nenhuma"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bem vindo de novo Rodrigo"
+      },
+      {
+        "response_type": "text",
+        "text": "Ent\u00e3o seu pedido  s\u00e3o 1 calabresa, 1 queijo e  entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 40 est\u00e1 correto o endere\u00e7o?"
+      }
+    ],
+    "text": [
+      "Bem vindo de novo Rodrigo",
+      "Ent\u00e3o seu pedido  s\u00e3o 1 calabresa, 1 queijo e  entregar no endere\u00e7o Rua Guilherme Damini, 96 pelo pre\u00e7o de 40 est\u00e1 correto o endere\u00e7o?"
+    ],
+    "nodes_visited": [
+      "node_4_1537730868787",
+      "node_36_1537642067646",
+      "node_37_1537643158755"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "0ee1b8d6-ba30-437c-964a-8fdc439fb6ac",
+    "system": {
+      "dialog_turn_counter": 6,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_37_1537643158755"
+        }
+      ],
+      "dialog_request_counter": 6
+    },
+    "ende": "Rua Guilherme Damini, 96",
+    "Sabores": [
+      [
+        "Calabresa",
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "telefone": [
+      "998558024"
+    ],
+    "cende": "Bem vindo de novo Rodrigo",
+    "nome": "Rodrigo",
+    "frase": " s\u00e3o 1 calabresa, 1 queijo e ",
+    "gravarende": "F",
+    "obs": "",
+    "new": "s",
+    "pedido": "Pedido463",
+    "preco": 40,
+    "grava": "F",
+    "ler": "V",
+    "zerar": "F",
+    "obspedido": "nenhuma"
+  }
+}{
+  "intents": [
+    {
+      "intent": "afrimacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "sim"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "qual a forma de pagamento?"
+      }
+    ],
+    "text": [
+      "qual a forma de pagamento?"
+    ],
+    "nodes_visited": [
+      "node_45_1537644973067"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "0ee1b8d6-ba30-437c-964a-8fdc439fb6ac",
+    "system": {
+      "dialog_turn_counter": 7,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_45_1537644973067"
+        }
+      ],
+      "dialog_request_counter": 7
+    },
+    "ende": "Rua Guilherme Damini, 96",
+    "Sabores": [
+      [
+        "Calabresa",
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "telefone": [
+      "998558024"
+    ],
+    "cende": "Bem vindo de novo Rodrigo",
+    "nome": "Rodrigo",
+    "frase": " s\u00e3o 1 calabresa, 1 queijo e ",
+    "gravarende": "F",
+    "obs": "",
+    "obspedido": "nenhuma",
+    "new": "s",
+    "pedido": "Pedido463",
+    "preco": 40,
+    "grava": "F",
+    "ler": "F",
+    "zerar": "F"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "forma_pagamento",
+      "location": [
+        0,
+        8
+      ],
+      "value": "dinheiro",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "dinheiro"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Troco para quanto ?"
+      }
+    ],
+    "text": [
+      "Troco para quanto ?"
+    ],
+    "nodes_visited": [
+      "node_1_1538851201550"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "0ee1b8d6-ba30-437c-964a-8fdc439fb6ac",
+    "system": {
+      "dialog_turn_counter": 8,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "node_1_1538851201550"
+        }
+      ],
+      "dialog_request_counter": 8
+    },
+    "ende": "Rua Guilherme Damini, 96",
+    "Sabores": [
+      [
+        "Calabresa",
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "telefone": [
+      "998558024"
+    ],
+    "cende": "Bem vindo de novo Rodrigo",
+    "nome": "Rodrigo",
+    "frase": " s\u00e3o 1 calabresa, 1 queijo e ",
+    "gravarende": "F",
+    "obs": "",
+    "obspedido": "nenhuma",
+    "new": "s",
+    "pedido": "Pedido463",
+    "preco": 40,
+    "grava": "F",
+    "ler": "F",
+    "zerar": "F",
+    "fpag": "dinheiro"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        2
+      ],
+      "value": "50",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 50
+      }
+    }
+  ],
+  "input": {
+    "text": "50"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido463"
+      }
+    ],
+    "text": [
+      "Obrigado por ter usado a ComPizza volte sempre, seu pedido \u00e9 o pedido Pedido463"
+    ],
+    "nodes_visited": [
+      "node_2_1538852286483"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "0ee1b8d6-ba30-437c-964a-8fdc439fb6ac",
+    "system": {
+      "dialog_turn_counter": 9,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_37_1537643158755": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1538852286483": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_request_counter": 9,
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "ende": "Rua Guilherme Damini, 96",
+    "Sabores": [
+      [
+        "Calabresa",
+        "Queijo"
+      ],
+      [
+        "1"
+      ]
+    ],
+    "telefone": [
+      "998558024"
+    ],
+    "cende": "Bem vindo de novo Rodrigo",
+    "nome": "Rodrigo",
+    "frase": " s\u00e3o 1 calabresa, 1 queijo e ",
+    "gravarende": "F",
+    "fpag": "dinheiro",
+    "obs": "",
+    "obspedido": "nenhuma",
+    "new": "s",
+    "pedido": "Pedido463",
+    "preco": 40,
+    "grava": "V",
+    "ler": "F",
+    "zerar": "F",
+    "tipoc": "50"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "e5df9359-7b6d-498b-90c3-d935294d2232",
+    "system": {
+      "initialized": true,
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido604",
+    "obs": "",
+    "zerar": "F"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1.Boa noite, bem vindo ao ComPizza, \"sua empresa de pizza favorita\", qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "52b72df1-44f4-408f-a4f2-d96ed277de15",
+    "system": {
+      "initialized": true,
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido604",
+    "obs": "",
+    "zerar": "F"
+  }
 }

@@ -11,6 +11,7 @@
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	crossorigin="anonymous"></script>
 	<script src="{% static '/js/jquery-3.3.1.js' %}"></script>
+	<script src="{% static '/js/jquery.mask.js' %}"></script>
 	</head>
 
 	<body style="background-image: url('/static/img/background.jpg')">
@@ -20,6 +21,7 @@
 				<ul>
 					<li> <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home </button> </li>
 					<li> <button class="tablinks" onclick="openTab(event, 'Cardapio')">Cardápio </button> </li>
+					<li> <button class="tablinks" onclick="openTab(event, 'Pedido')">Consultar Pedido </button></li>
 				</ul>
 			</div>
 			<div>
@@ -52,6 +54,5 @@
 	</body>
 
 	<script src="{% static '/js/bootstrap.js' %}"></script>
-	<script src="{% static '/js/chat.js' %}"></script>
-	<script src="{% static '/js/tabControl.js' %}"></script>
+	<script src="{% static '/js/home.js' %}"></script>
 </html>
