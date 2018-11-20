@@ -1,0 +1,21 @@
+{% load tags_extras %}
+{% load static %}
+{% for pedido in pedidos %}
+    <div class="grid-item pedidos-item col-md-6 col-sm-12">
+        <p>Nome: {{ pedido.1.nome }}</p>
+        <p>Pizzas: {% if "pizzas"|in:pedido.1 %}
+            {{ pedido.1.pizzas.values|join:", " }}
+        {% endif %}</p>
+        <p>Refrigerantes: {% if "refrigerante"|in:pedido.1 %} 
+            {{ pedido.1.refrigerante.values|join:", " }}
+        {% endif %}</p>
+        <p>Preço: {{ pedido.1.preco }}</p>
+        <p>Endereço: {{ pedido.1.endereco }}</p>
+        <p>Telefone: {{ pedido.1.telefone }}</p>
+        <p>Status: {{ pedido.1.status }}</p>
+        <p>Observações: {{ pedido.1.observacao_pedido }}</p>
+        <form name="complete" style="border-style: none; margin : 0%;" action="{% url 'completeOrder' %}" method="POST">{% csrf_token %}
+            <button class="btncont btn btn-info" type="submit" name="pedido" value="{{ pedido.0 }}">Completo</button>
+        </form>
+    </div>
+{% endfor %}

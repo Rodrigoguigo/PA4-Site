@@ -1,5 +1,4 @@
 {% extends 'personal/adminHeader.html' %}
-{% load tags_extras %}
 {% load static %}
 
 {% block content %}
@@ -15,29 +14,19 @@
 
 <div class="grid-container container">
     <div id="listaPedidos" class="row mx-4 my-3">
-    {% for pedido in pedidos %}
-        <div class="grid-item pedidos-item col-md-6 col-sm-12">
-            <p>Nome: {{ pedido.1.nome }}</p>
-            <p>Pizzas: {% if "pizzas"|in:pedido.1 %}
-                {{ pedido.1.pizzas.values|join:", " }}
-            {% endif %}</p>
-            <p>Refrigerantes: {% if "refrigerante"|in:pedido.1 %} 
-                {{ pedido.1.refrigerante.values|join:", " }}
-            {% endif %}</p>
-            <p>Preço: {{ pedido.1.preco }}</p>
-            <p>Endereço: {{ pedido.1.endereco }}</p>
-            <p>Telefone: {{ pedido.1.telefone }}</p>
-            <p>Status: {{ pedido.1.status }}</p>
-            <p>Observações: {{ pedido.1.observacao_pedido }}</p>
-            <form name="complete" style="border-style: none; margin : 0%;" action="{% url 'completeOrder' %}" method="POST">{% csrf_token %}
-                <button class="btncont btn btn-info" type="submit" name="pedido" value="{{ pedido.0 }}">Completo</button>
-            </form>
-        </div>
-    {% endfor %}
+        {% include "personal/listaPedidosAdmin.html" %}
     </div>
 </div>
 <script src="{% static '/js/checkUpdates.js' %}"></script>
-<script src="{% static '/js/admin.js' %}">
+<script src="{% static '/js/admin.js' %}"></script>
+<script>
+    setInterval(getListaPedidos, 5000);
+
+    function getListaPedidos(){
+        $.post("{% url 'getListaPedidos' %}", { csrfmiddlewaretoken : csrftoken }, function(resp) {
+            $("#listaPedidos").html(resp)
+        });
+    }
 </script>
 
 {% endblock %}

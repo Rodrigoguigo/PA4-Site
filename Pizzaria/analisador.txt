@@ -32590,4 +32590,1212 @@
     "obs": "",
     "zerar": "F"
   }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1. Boa noite. Bem vindo ao ComPizza,  qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1. Boa noite. Bem vindo ao ComPizza,  qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6d8b8b57-d3f0-44fd-a785-6de241836d82",
+    "system": {
+      "initialized": true,
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido780",
+    "obs": "",
+    "zerar": "F"
+  }
+}{
+  "intents": [
+    {
+      "intent": "Pedido",
+      "confidence": 1
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        18,
+        21
+      ],
+      "value": "1",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 1
+      }
+    }
+  ],
+  "input": {
+    "text": "gostaria de pedir uma pizza"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Quais sabores de pizza gostaria?"
+      }
+    ],
+    "text": [
+      "Quais sabores de pizza gostaria?"
+    ],
+    "nodes_visited": [
+      "node_2_1536694712100",
+      "handler_5_1536694807221",
+      "slot_3_1536694807221"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6d8b8b57-d3f0-44fd-a785-6de241836d82",
+    "system": {
+      "dialog_request_counter": 2,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_turn_counter": 2,
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_3_1536694807221",
+          "state": "in_progress"
+        }
+      ],
+      "initialized": true
+    },
+    "telefone": [],
+    "grava": "F",
+    "pedido": "Pedido780",
+    "gravarende": "F",
+    "obs": "",
+    "ler": "F",
+    "zerar": "F"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        1
+      ],
+      "value": "2",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 2
+      }
+    },
+    {
+      "entity": "Sabores",
+      "location": [
+        5,
+        14
+      ],
+      "value": "Calabresa",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "2 de calabresa"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Bebidas?"
+      }
+    ],
+    "text": [
+      "Bebidas?"
+    ],
+    "nodes_visited": [
+      "slot_3_1536694807221",
+      "handler_4_1536694807221",
+      "handler_8_1536694877396",
+      "slot_6_1536694877396"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6d8b8b57-d3f0-44fd-a785-6de241836d82",
+    "system": {
+      "dialog_request_counter": 3,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_turn_counter": 3,
+      "dialog_stack": [
+        {
+          "dialog_node": "slot_6_1536694877396",
+          "state": "in_progress"
+        }
+      ],
+      "initialized": true
+    },
+    "telefone": [],
+    "grava": "F",
+    "pedido": "Pedido780",
+    "gravarende": "F",
+    "obs": "",
+    "ler": "F",
+    "zerar": "F",
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ]
+  }
+}{
+  "intents": [
+    {
+      "intent": "Negacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "nenhuma"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Digite seu numero de telefone para que possamos identific\u00e1-lo."
+      }
+    ],
+    "text": [
+      "Digite seu numero de telefone para que possamos identific\u00e1-lo."
+    ],
+    "nodes_visited": [
+      "slot_6_1536694877396",
+      "handler_15_1536696466543",
+      "node_2_1536694712100"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6d8b8b57-d3f0-44fd-a785-6de241836d82",
+    "system": {
+      "dialog_request_counter": 4,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_turn_counter": 4,
+      "dialog_stack": [
+        {
+          "dialog_node": "node_2_1536694712100"
+        }
+      ],
+      "initialized": true,
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ]
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "telefone": [],
+    "grava": "F",
+    "pedido": "Pedido780",
+    "gravarende": "F",
+    "obs": "",
+    "preco": 40,
+    "frase": " s\u00e3o 2 calabresa e ",
+    "ler": "F",
+    "zerar": "F"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        11
+      ],
+      "value": "15998558024",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 15998558024
+      }
+    }
+  ],
+  "input": {
+    "text": "15998558024"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Quais as observa\u00e7\u00f5es do seu pedido? Caso n\u00e3o haja nenhuma, digite \"Continue\"."
+      }
+    ],
+    "text": [
+      "Quais as observa\u00e7\u00f5es do seu pedido? Caso n\u00e3o haja nenhuma, digite \"Continue\"."
+    ],
+    "nodes_visited": [
+      "node_19_1536697117956"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6d8b8b57-d3f0-44fd-a785-6de241836d82",
+    "system": {
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "dialog_request_counter": 5,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_turn_counter": 5,
+      "dialog_stack": [
+        {
+          "dialog_node": "node_19_1536697117956"
+        }
+      ],
+      "initialized": true
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "telefone": [
+      "15998558024"
+    ],
+    "pedido": "Pedido780",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": "",
+    "preco": 40,
+    "frase": " s\u00e3o 2 calabresa e ",
+    "ler": "V",
+    "zerar": "F"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {
+    "text": "continue"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Pelo visto voc\u00ea n\u00e3o tem cadastro"
+      },
+      {
+        "response_type": "text",
+        "text": "Voc\u00ea ainda n\u00e3o tem cadastro conosco. Qual seria o endere\u00e7o?"
+      }
+    ],
+    "text": [
+      "Pelo visto voc\u00ea n\u00e3o tem cadastro",
+      "Voc\u00ea ainda n\u00e3o tem cadastro conosco. Qual seria o endere\u00e7o?"
+    ],
+    "nodes_visited": [
+      "node_4_1537730868787",
+      "node_36_1537642067646",
+      "node_38_1537643170920"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6d8b8b57-d3f0-44fd-a785-6de241836d82",
+    "system": {
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "dialog_request_counter": 6,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_turn_counter": 6,
+      "dialog_stack": [
+        {
+          "dialog_node": "node_38_1537643170920"
+        }
+      ],
+      "initialized": true
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "telefone": [
+      "15998558024"
+    ],
+    "pedido": "Pedido780",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": "",
+    "preco": 40,
+    "frase": " s\u00e3o 2 calabresa e ",
+    "cende": "Pelo visto voc\u00ea n\u00e3o tem cadastro",
+    "new": "n",
+    "ler": "V",
+    "zerar": "F",
+    "obspedido": "continue"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        21,
+        23
+      ],
+      "value": "96",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 96
+      }
+    }
+  ],
+  "input": {
+    "text": "rua guilherme damini 96"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Digite seu nome completo."
+      }
+    ],
+    "text": [
+      "Digite seu nome completo."
+    ],
+    "nodes_visited": [
+      "node_1_1537648252854"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6d8b8b57-d3f0-44fd-a785-6de241836d82",
+    "system": {
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "dialog_request_counter": 7,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_turn_counter": 7,
+      "dialog_stack": [
+        {
+          "dialog_node": "node_1_1537648252854"
+        }
+      ],
+      "initialized": true
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "telefone": [
+      "15998558024"
+    ],
+    "pedido": "Pedido780",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": "",
+    "preco": 40,
+    "frase": " s\u00e3o 2 calabresa e ",
+    "cende": "Pelo visto voc\u00ea n\u00e3o tem cadastro",
+    "new": "n",
+    "ler": "V",
+    "zerar": "F",
+    "obspedido": "continue",
+    "ende": "rua guilherme damini 96"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {
+    "text": "Rodrigo Padilha Marques"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "O endere\u00e7o \u00e9 rua guilherme damini 96 para Rodrigo Padilha Marques. Correto?"
+      }
+    ],
+    "text": [
+      "O endere\u00e7o \u00e9 rua guilherme damini 96 para Rodrigo Padilha Marques. Correto?"
+    ],
+    "nodes_visited": [
+      "node_41_1537644497599"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6d8b8b57-d3f0-44fd-a785-6de241836d82",
+    "system": {
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "dialog_request_counter": 8,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        },
+        "node_41_1537644497599": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_turn_counter": 8,
+      "dialog_stack": [
+        {
+          "dialog_node": "node_41_1537644497599"
+        }
+      ],
+      "initialized": true
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "telefone": [
+      "15998558024"
+    ],
+    "pedido": "Pedido780",
+    "grava": "F",
+    "gravarende": "F",
+    "obs": "",
+    "preco": 40,
+    "ende": "rua guilherme damini 96",
+    "frase": " s\u00e3o 2 calabresa e ",
+    "cende": "Pelo visto voc\u00ea n\u00e3o tem cadastro",
+    "new": "n",
+    "ler": "V",
+    "zerar": "F",
+    "obspedido": "continue",
+    "nome": "Rodrigo Padilha Marques"
+  }
+}{
+  "intents": [
+    {
+      "intent": "afrimacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "sim"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Certo."
+      },
+      {
+        "response_type": "text",
+        "text": "Confirme comigo: o pedido  s\u00e3o 2 calabresa e  para entregar no endere\u00e7o rua guilherme damini 96 pelo pre\u00e7o de 40. Tudo correto?"
+      }
+    ],
+    "text": [
+      "Certo.",
+      "Confirme comigo: o pedido  s\u00e3o 2 calabresa e  para entregar no endere\u00e7o rua guilherme damini 96 pelo pre\u00e7o de 40. Tudo correto?"
+    ],
+    "nodes_visited": [
+      "node_43_1537644582419",
+      "node_1_1537905763796"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6d8b8b57-d3f0-44fd-a785-6de241836d82",
+    "system": {
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "dialog_request_counter": 9,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        },
+        "node_41_1537644497599": {
+          "0": [
+            0
+          ]
+        },
+        "node_43_1537644582419": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537905763796": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_turn_counter": 9,
+      "dialog_stack": [
+        {
+          "dialog_node": "node_1_1537905763796"
+        }
+      ],
+      "initialized": true
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "telefone": [
+      "15998558024"
+    ],
+    "nome": "Rodrigo Padilha Marques",
+    "pedido": "Pedido780",
+    "grava": "a",
+    "gravarende": "V",
+    "obs": "",
+    "preco": 40,
+    "ende": "rua guilherme damini 96",
+    "frase": " s\u00e3o 2 calabresa e ",
+    "cende": "Pelo visto voc\u00ea n\u00e3o tem cadastro",
+    "new": "t",
+    "ler": "V",
+    "zerar": "F",
+    "obspedido": "continue"
+  }
+}{
+  "intents": [
+    {
+      "intent": "afrimacao",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "input": {
+    "text": "sim"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Como deseja que seja a forma de pagamento?"
+      }
+    ],
+    "text": [
+      "Como deseja que seja a forma de pagamento?"
+    ],
+    "nodes_visited": [
+      "node_45_1537644973067"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6d8b8b57-d3f0-44fd-a785-6de241836d82",
+    "system": {
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "dialog_request_counter": 10,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        },
+        "node_41_1537644497599": {
+          "0": [
+            0
+          ]
+        },
+        "node_43_1537644582419": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537905763796": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_turn_counter": 10,
+      "dialog_stack": [
+        {
+          "dialog_node": "node_45_1537644973067"
+        }
+      ],
+      "initialized": true
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "telefone": [
+      "15998558024"
+    ],
+    "nome": "Rodrigo Padilha Marques",
+    "pedido": "Pedido780",
+    "grava": "a",
+    "gravarende": "F",
+    "obs": "",
+    "preco": 40,
+    "ende": "rua guilherme damini 96",
+    "frase": " s\u00e3o 2 calabresa e ",
+    "cende": "Bem vindo de novo Rodrigo Padilha Marques",
+    "new": "s",
+    "ler": "F",
+    "zerar": "F",
+    "obspedido": "continue"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "forma_pagamento",
+      "location": [
+        0,
+        8
+      ],
+      "value": "dinheiro",
+      "confidence": 1
+    }
+  ],
+  "input": {
+    "text": "dinheiro"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Troco para quanto ?"
+      }
+    ],
+    "text": [
+      "Troco para quanto ?"
+    ],
+    "nodes_visited": [
+      "node_1_1538851201550"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6d8b8b57-d3f0-44fd-a785-6de241836d82",
+    "system": {
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "dialog_request_counter": 11,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        },
+        "node_41_1537644497599": {
+          "0": [
+            0
+          ]
+        },
+        "node_43_1537644582419": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537905763796": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_turn_counter": 11,
+      "dialog_stack": [
+        {
+          "dialog_node": "node_1_1538851201550"
+        }
+      ],
+      "initialized": true
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "telefone": [
+      "15998558024"
+    ],
+    "nome": "Rodrigo Padilha Marques",
+    "pedido": "Pedido780",
+    "grava": "a",
+    "gravarende": "F",
+    "obs": "",
+    "preco": 40,
+    "ende": "rua guilherme damini 96",
+    "frase": " s\u00e3o 2 calabresa e ",
+    "cende": "Bem vindo de novo Rodrigo Padilha Marques",
+    "new": "s",
+    "ler": "F",
+    "zerar": "F",
+    "obspedido": "continue",
+    "fpag": "dinheiro"
+  }
+}{
+  "intents": [],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "location": [
+        0,
+        3
+      ],
+      "value": "100",
+      "confidence": 1,
+      "metadata": {
+        "numeric_value": 100
+      }
+    }
+  ],
+  "input": {
+    "text": "100"
+  },
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Pedido enviado. Muito obrigado por utilizar a ComPizza. Agradecemos a prefer\u00eancia!"
+      }
+    ],
+    "text": [
+      "Pedido enviado. Muito obrigado por utilizar a ComPizza. Agradecemos a prefer\u00eancia!"
+    ],
+    "nodes_visited": [
+      "node_2_1538852286483"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "6d8b8b57-d3f0-44fd-a785-6de241836d82",
+    "system": {
+      "skipped_slots": [
+        "slot_6_1536694877396"
+      ],
+      "dialog_request_counter": 12,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1536694712100": {
+          "0": [
+            0
+          ]
+        },
+        "node_19_1536697117956": {
+          "0": [
+            0
+          ]
+        },
+        "node_36_1537642067646": {
+          "0": [
+            0
+          ]
+        },
+        "node_38_1537643170920": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537648252854": {
+          "0": [
+            0
+          ]
+        },
+        "node_41_1537644497599": {
+          "0": [
+            0
+          ]
+        },
+        "node_43_1537644582419": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1537905763796": {
+          "0": [
+            0
+          ]
+        },
+        "node_45_1537644973067": {
+          "0": [
+            0
+          ]
+        },
+        "node_1_1538851201550": {
+          "0": [
+            0
+          ]
+        },
+        "node_2_1538852286483": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "dialog_turn_counter": 12,
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "initialized": true,
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "Sabores": [
+      [
+        "Calabresa"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "telefone": [
+      "15998558024"
+    ],
+    "nome": "Rodrigo Padilha Marques",
+    "pedido": "Pedido780",
+    "grava": "V",
+    "gravarende": "F",
+    "obs": "",
+    "preco": 40,
+    "ende": "rua guilherme damini 96",
+    "frase": " s\u00e3o 2 calabresa e ",
+    "fpag": "dinheiro",
+    "cende": "Bem vindo de novo Rodrigo Padilha Marques",
+    "new": "s",
+    "ler": "F",
+    "zerar": "F",
+    "obspedido": "continue",
+    "tipoc": "100"
+  }
+}{
+  "intents": [],
+  "entities": [],
+  "input": {},
+  "output": {
+    "generic": [
+      {
+        "response_type": "text",
+        "text": "Ol\u00e1. Boa noite. Bem vindo ao ComPizza,  qual seria seu pedido ?"
+      }
+    ],
+    "text": [
+      "Ol\u00e1. Boa noite. Bem vindo ao ComPizza,  qual seria seu pedido ?"
+    ],
+    "nodes_visited": [
+      "Bem-vindo"
+    ],
+    "log_messages": []
+  },
+  "context": {
+    "conversation_id": "7c34b828-9a97-4cf4-ac62-4352c74d1471",
+    "system": {
+      "initialized": true,
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "Bem-vindo": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    },
+    "grava": "F",
+    "gravarende": "F",
+    "telefone": [],
+    "ler": "F",
+    "pedido": "Pedido849",
+    "obs": "",
+    "zerar": "F"
+  }
 }

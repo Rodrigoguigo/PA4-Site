@@ -69,5 +69,5 @@ class DbBasic:
 
         for chave in pedidos:
             if pedidos[chave]['telefone'] == fone:
-                return pedidos['chave']
+                return pedidos[chave]
         return False

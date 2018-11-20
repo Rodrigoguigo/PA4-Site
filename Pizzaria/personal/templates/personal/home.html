@@ -11,65 +11,40 @@
     </div>
     <div id="Cardapio" class="tabContent">
         <div id="listaPizzas" class="grid-container row mx-5 my-5">
-                {% for chave, pizza in pizzas.items %}
-                    <div class="grid-item col-md-6 col-sm-12">
-                        <img src="{{ pizza.imagem }}" width="200">
-                        <p class="ctitle">{{ chave }}</p>
-                        <p class="ctext">{{ pizza.descricao }}</p>
-                        <p class="cpreco">R$ {{ pizza.preco|floatformat:2 }}</p>
-                    </div>
-                {% endfor %}
-            </div>
+            {% include "personal/listaPizzas.html" %}
+        </div>
     </div>
-    <div id="Pedido" class="tabContent">
+    <div id="PedidoPesquisa" class="tabContent">
         <div class="row my-5">
-            <form id="Pesquisa" class="grid-item offset-md-4 offset-sm-1 col-sm-10 col-md-4" action="{% url 'getPedido' %}" method="POST">
+            <div class="grid-item offset-md-4 offset-sm-1 col-sm-10 col-md-4">
                 <div style='text-align:center'>
-                    <label for="fone">Telefone: </label>
                     <input id="fone" type="text" placeholder="(00) 0000-0000" required/>
-                    <button class="btn btn-default my-2">
+                    <button class="btn btn-default my-2" onclick="getPedido()">
                         <span class="glyphicon glyphicon-search"></span>
                     </button>
                 </div>
-        </div>
-        <div id="PedidoInfo" class="row my-5" style="display: none">
-            <div class="grid-item offset-md-4 offset-sm-1 col-sm-10 col-md-4">
-                <div style="text-align:center">
-                    <p>Nome: {{ pedido.nome }}</p>
-                    <p>Endereço: {{ pedido.endereco }}</p>
-                    <p>Preço: {{ pedido.preco }}</p>
-                    {% if pedido.forma_pagamento == "dinheiro" %}
-                        <p>Pagamento: {{ pedido.observacao_pagamento }}</p>
-                    {% endif %}
-                    <p>Status: {{ pedido.status }}</p>
-                </div>
             </div>
         </div>
-        <div id="SemPedido" class="row my-5" style="display: none">
-            <div class="grid-item offset-md-4 offset-sm-1 col-sm-10 col-md-4">
-                <div style="text-align:center">
-                    <h4>Pedido não encontrado</h4>
-                </div>
-            </div>
+        <div id="Pedido">
         </div>
     </div>
 </div>
 <script src="{% static '/js/checkUpdates.js' %}"></script>
 <script>
-    function getUpdates(result){
-        updatedHtml = "";
-        for(key in result['pizzas']){
-            updatedHtml += "<div class='grid-item col-md-6 col-sm-12'>\n\t" +
-                "<img src=" + result['pizzas'][key]['imagem'] + " width='200'>\n\t" +
-                "<p class='ctitle'>" + key + "</p>\n\t" +
-                "<p class='ctext'>" + result['pizzas'][key]['descricao'] + "</p>\n\t" +
-                "<p class='cpreco'>R$ " + parseFloat(result['pizzas'][key]['preco']).toFixed(2) + "</p>\n" +
-                "</div>";
-        }
+    setInterval(getListaPizzas, 5000);
 
-        $("#listaPizzas").html(updatedHtml);
+    function getPedido(){
+        var fone = $('#fone').val().replace("(", "").replace(") ", "").replace("-", "")
+        var getPedidoUrl = "{% url 'getPedido' fone=0%}".replace("0", fone)
+        $("#Pedido").html('').load(getPedidoUrl);
     }
+    
+    function getListaPizzas(){
+        $.post("{% url 'getListaPizzas' %}", { csrfmiddlewaretoken : csrftoken }, function(resp) {
+            $("#listaPizzas").html(resp)
+        });
 
-    setInterval( function() { checkUpdates("pizzas", getUpdates) }, 5000);
+        checkOffset();
+    }
 </script>
 {% endblock %}

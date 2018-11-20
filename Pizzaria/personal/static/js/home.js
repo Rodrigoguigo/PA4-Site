@@ -38,7 +38,8 @@ function checkOffset() {
         return rect.top;
     }
 
-    if((getRectTop(socialFloat) + document.body.scrollTop) + socialFloat.offsetHeight >= (getRectTop(footer) + document.body.scrollTop) - 10){
+    if((getRectTop(socialFloat) + document.body.scrollTop) + socialFloat.offsetHeight 
+        >= (getRectTop(footer) + document.body.scrollTop) - socialFloat.clientHeight){
         socialFloat.style.bottom = window.innerHeight - getRectTop(footer) + 'px';
     }
     if(document.body.scrollTop + window.innerHeight < (getRectTop(footer) + document.body.scrollTop)){
@@ -107,29 +108,6 @@ $(function(){
         });
     });
 });
-
-$(function(){
-    $('#Pesquisa').on('submit', function(e){
-        e.preventDefault();
-        $.ajax({
-            url: $(this).attr('action'),
-            data: {
-                'telefone': $('#fone').val(),
-                'csrfmiddlewaretoken': csrftoken
-            },
-            dataType: 'json',
-            method: $(this).attr('method'),
-            success: function(data){
-                if(!data.pedido){
-                    $('#SemPedido').css('display', 'block');
-                }
-                else{
-                    $('#PedidoInfo').load(' #PedidoInfo', data.pedido).css('display', 'block');
-                }
-            }
-        })
-    })
-})
 
 function openTab(e, cityName){
     var i, tabcontent, tablinks;

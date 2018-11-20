@@ -1,0 +1,11 @@
+<div id="Pedido" class="row my-5">
+    <div class="grid-item offset-md-5 offset-sm-2 col-sm-6 col-md-2">
+        <p>Nome: {{ pedido.nome }}</p>
+        <p>Endereço: {{ pedido.endereco }}</p>
+        <p>Preço: {{ pedido.preco }}</p>
+        {% if pedido.forma_pagamento == "dinheiro" %}
+            <p>Pagamento: {{ pedido.observacao_pagamento }}</p>
+        {% endif %}
+        <p>Status: {{ pedido.status }}</p>
+    </div>
+</div>

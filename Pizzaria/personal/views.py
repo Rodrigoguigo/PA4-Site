@@ -113,24 +113,54 @@ def completeOrder(request):
 
     return checkUpdates(request)
 
-def getPedido(request):
+def getListaPedidos(request):
     global DB
-    
-    fone = request.POST['telefone']
-    fone.replace('(', '').replace(')','')
-    fone.trim()
-    print(fone)
+
+    pedidos = DB.getPedidos()
+
+    if pedidos is not None:
+        for chave, pedido in pedidos.items():
+            if 'pizzas' in pedido:
+                for chave_pizza in pedido['pizzas']:
+                    pedido['pizzas'][chave_pizza] = str(pedido['pizzas'][chave_pizza]) + " " + chave_pizza
+            if 'refrigerante' in pedido:
+                for chave_refri in pedido['refrigerante']:
+                    pedido['refrigerante'][chave_refri] = str(pedido['refrigerante'][chave_refri]) + " " + chave_refri
+            pedido['data_pedido'] = datetime.strptime(pedido['data_pedido'], '%Y-%m-%d %H:%M:%S.%f')
+   
+        pedidos = sorted(pedidos.items(), key=lambda x: (x[1]['data_pedido'], x[0]), reverse=True)
+
+    context = {
+        'pedidos' : pedidos
+    }
+
+    return render(request, 'personal/listaPedidosAdmin.html', context)
+
+def getPedido(request, fone):
+    global DB
 
     pedido = DB.getPedido(fone)
-
-    print(pedido)
 
     context = {
         'pedido' : pedido
     }
 
-    return HttpResponse(json.dumps(context), content_type='application/json')
-    
+    if not pedido:
+        print(pedido)
+        return render(request, 'personal/semPedido.html')
+    else:
+        return render(request, 'personal/pedidoInfo.html', context)
+
+def getListaPizzas(request):
+    global DB
+
+    pizzas = DB.getPizzas()
+
+    context = {
+            'pizzas' : pizzas
+    }
+
+    return render(request, 'personal/listaPizzas.html', context)
 
 def checkUpdates(request):
     global DB

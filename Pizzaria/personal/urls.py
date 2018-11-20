@@ -27,5 +27,7 @@ urlpatterns = [
     path('sendMessage', views.sendMessage, name='message'),
     path('checkUpdates', views.checkUpdates, name='checkUpdates'),
     path('completeOrder', views.completeOrder, name='completeOrder'),
-    path('getPedido', views.getPedido, name='getPedido')
+    path('getPedido/<str:fone>', views.getPedido, name='getPedido'),
+    path('admin/getListaPedidos', views.getListaPedidos, name='getListaPedidos'),
+    path('getListaPizzas', views.getListaPizzas, name='getListaPizzas')
 ]

@@ -3,8 +3,8 @@
 
 {% block content %}
 <div class="grid-container container">
-    <div class="row mx-4 my-3">
-    {% for chave, pizza in pizzas.items %}
+    <div id="listaPizzas" class="row mx-4 my-3">
+        {% for chave, pizza in pizzas.items %}
         <div class="grid-item col-md-6 col-sm-12">
             <div id="{{ pizza.nome }}Info" class="{{ pizza.nome }}Tab">
                 <img src="{{ pizza.imagem }}" width="150">
@@ -25,7 +25,7 @@
 
                     <label for="desc"><b>Descrição</b></label>
                     <input type="text" placeholder="Digite a descrição da pizza" name="desc" value="{{ pizza.descricao }}" required>
-        
+
                     <label for="preco"><b>Preço da Pizza:</b></label>
                     <input type="number" placeholder="Digite o preço" name="preco" value="{{ pizza.preco }}" required>
 
@@ -36,7 +36,7 @@
                 </form>
             </div>
         </div>
-    {% endfor %}
+        {% endfor %}
     </div>
 </div>
 <script src="{% static '/js/adminCardapio.js' %}"></script>
