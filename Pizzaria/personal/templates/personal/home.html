@@ -10,15 +10,15 @@
         <h1 class="hometext">PIZZA. CHAT.<br/>BOTS</h1>
     </div>
     <div id="Cardapio" class="tabContent">
-        <div id="listaPizzas" class="grid-container row mx-5 my-5">
-            {% include "personal/listaPizzas.html" %}
+        <div id="CardapioGrid">
+            {% include "personal/cardapio.html" %}
         </div>
     </div>
     <div id="PedidoPesquisa" class="tabContent">
         <div class="row my-5">
             <div class="grid-item offset-md-4 offset-sm-1 col-sm-10 col-md-4">
                 <div style='text-align:center'>
-                    <input id="fone" type="text" placeholder="(00) 0000-0000" required/>
+                    <input id="fone" type="text" required/>
                     <button class="btn btn-default my-2" onclick="getPedido()">
                         <span class="glyphicon glyphicon-search"></span>
                     </button>
@@ -31,7 +31,7 @@
 </div>
 <script src="{% static '/js/checkUpdates.js' %}"></script>
 <script>
-    setInterval(getListaPizzas, 5000);
+    setInterval(getCardapio, 30000);
 
     function getPedido(){
         var fone = $('#fone').val().replace("(", "").replace(") ", "").replace("-", "")
@@ -39,9 +39,13 @@
         $("#Pedido").html('').load(getPedidoUrl);
     }
     
-    function getListaPizzas(){
-        $.post("{% url 'getListaPizzas' %}", { csrfmiddlewaretoken : csrftoken }, function(resp) {
-            $("#listaPizzas").html(resp)
+    function getCardapio(){
+        $.post("{% url 'getCardapio' %}", { csrfmiddlewaretoken : csrftoken }, function(resp) {
+            var dispPizza = $("#listaPizzas").css("display")
+            var dispBebidas = $("#listaBebidas").css("display")
+            $("#CardapioGrid").html(resp)
+            $("#listaPizzas").css("display", dispPizza)
+            $("#listaBebidas").css("display", dispBebidas)
         });
 
         checkOffset();

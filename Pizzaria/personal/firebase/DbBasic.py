@@ -47,6 +47,16 @@ class DbBasic:
                 }
             )
 
+    def subtrairPizzas(self, dicP):
+        aux = db.reference('pizzas')
+        for y in dicP.items():
+            aux.child(y[0]).update(y[1])
+
+    def subtrairRefri(self, dicR):
+        aux = db.reference('refrigerante')
+        for y in dicR.items():
+            aux.child(y[0]).update(y[1])
+    
     def gravarPedido(self, ped, num):
         # print("passei2")
         db.reference('pedidos').child(num).set(ped)

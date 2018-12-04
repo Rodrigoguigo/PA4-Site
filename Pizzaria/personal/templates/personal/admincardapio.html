@@ -39,5 +39,25 @@
         {% endfor %}
     </div>
 </div>
+<div class="grid-item col-md-6 com-sm-12" style="margin: auto; margin-bottom:50px; margin-top: 0%">
+    <form action="{% url 'addPizza' %}" method="post" class="addpizza col-12">{% csrf_token %}
+        <div>
+            <label for="img"><b>Imagem:</b></label>
+            <input type="url" placeholder="Digite a url da imagem" name="img" required>
+
+            <label for="nome"><b>Nome da Pizza:</b></label>
+            <input type="text" placeholder="Digite o nome da pizza" name="nome" required>
+
+            <label for="desc"><b>Descrição</b></label>
+            <input type="text" placeholder="Digite a descrição da pizza" name="desc" required>
+
+            <label for="preco"><b>Preço da Pizza:</b></label>
+            <input type="number" placeholder="Digite o preço" name="preco" required>
+
+            <button type="submit">Adicionar</button>
+        </div>
+    </form>
+    <h2 class='message'>{{ result }}</h2>
+</div>
 <script src="{% static '/js/adminCardapio.js' %}"></script>
 {% endblock %}

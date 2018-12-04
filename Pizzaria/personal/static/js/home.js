@@ -23,15 +23,6 @@ for (i = 0; i < head.length; i++) {
     )
 };
 
-$("#fone").mask("(00) 0000-00009");
-$("#fone").keyup(function(){
-    if($(this).val().length == 15){
-        $("#fone").mask("(00) 00000-0009");
-    } else {
-        $("#fone").mask("(00) 0000-00009");
-    }
-});
-
 function checkOffset() {
     function getRectTop(el){
         var rect = el.getBoundingClientRect();
@@ -109,7 +100,7 @@ $(function(){
     });
 });
 
-function openTab(e, cityName){
+function openTab(e, tabName){
     var i, tabcontent, tablinks;
 
     tabcontent = document.getElementsByClassName("tabContent");
@@ -120,10 +111,28 @@ function openTab(e, cityName){
     for(i=0; i<tablinks.length; i++)
         tablinks[i].className = tablinks[i].className.replace(" active", "")
 
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
+    e.currentTarget.className += " active";
+
+    checkOffset();
+}
+
+function openTabCard(e, tabName){
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabContentCard");
+    for(i=0; i<tabcontent.length; i++)
+        tabcontent[i].style.display = "none";
+    
+    tablinks = document.getElementsByClassName("tablinksCard");
+    for(i=0; i<tablinks.length; i++)
+        tablinks[i].className = tablinks[i].className.replace(" active", "")
+
+    document.getElementById(tabName).style.display = "flex";
     e.currentTarget.className += " active";
 
     checkOffset();
 }
 
 document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpenCard").click();

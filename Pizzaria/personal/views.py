@@ -14,7 +14,8 @@ def index(request):
     global WATSON, DB
     WATSON.reiniciarConversa();
     context = {
-        'pizzas' : DB.getPizzas()
+        'pizzas' : DB.getPizzas(),
+        'refrigerante' : DB.getRefri()
     }
     return render(request, 'personal/home.html', context)
 
@@ -80,20 +81,21 @@ def adminCardapio(request):
 
 def addPizza(request):
     global USER
+    global WATSON
+    
     if USER.isUserLoggedIn():
-        context = {}
 
-        if 'nome' in request.POST:
-            values = {
-                'nome':request.POST['nome'],
-                'descricao':request.POST['desc'],
-                'imagem':request.POST['img'],
-                'preco':request.POST['preco']
-            }
-           
-            context = {'result':USER.createPizza(values['nome'], values)}
+        values = {
+            'nome':request.POST['nome'],
+            'descricao':request.POST['desc'],
+            'imagem':request.POST['img'],
+            'preco':request.POST['preco']
+        }
+
+        USER.createPizza(values['nome'], values)
+        WATSON.adicionarEntidadePizza(values['nome'])
        
-        return render(request, 'personal/add.html', context)
+        return adminCardapio(request)
 
     return redirect('login')
 
@@ -151,16 +153,18 @@ def getPedido(request, fone):
     else:
         return render(request, 'personal/pedidoInfo.html', context)
 
-def getListaPizzas(request):
+def getCardapio(request):
     global DB
 
     pizzas = DB.getPizzas()
+    refrigerante = DB.getRefri()
 
     context = {
-            'pizzas' : pizzas
+            'pizzas' : pizzas,
+            'refrigerante' : refrigerante
     }
 
-    return render(request, 'personal/listaPizzas.html', context)
+    return render(request, 'personal/cardapio.html', context)
 
 def checkUpdates(request):
     global DB

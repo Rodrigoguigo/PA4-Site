@@ -92,6 +92,7 @@ class WatBasics:
         self.linkarValores()
         # print(self.context['telefone'])
         self.buscarEndereco("".join(self.context['telefone']))
+        self.checkQuantidade()
         # print(self.context['grava'])
         # print(self.context['ler'])
         # print(self.context['gravarende'])
@@ -119,6 +120,47 @@ class WatBasics:
                 self.context['cende'] = 'Bem vindo de novo ' + nome
                 self.context['nome'] = nome
                 self.context['ende'] = aju
+
+    def checkQuantidade(self):
+        if self.context['lerqt'] == 'V':
+            error = ""
+            ajuP = self.fire.getPizzas()
+            ajuR = self.fire.getRefri()
+            removerR = {}
+            removerP = {}
+
+            for x in list(self.originalEscritaPizza.items()):
+                if ajuP[x[0]]['quantidade'] - int(self.escritaValorPizza[x[1]]) < 0:
+                    if error == "":
+                        error += "Não há quantidade suficiente de " + x[0] + ", "
+                    else:
+                        error += x[0] + ", "
+                else:
+                    removerP[x[0]] = {'quantidade': ajuP[x[0]]['quantidade'] - int(self.escritaValorPizza[x[1]])}
+
+            for y in list(self.originalEscritaRefri.items()):
+                if ajuR[y[0]]["quantidade"] - int(self.escritaValorRefri[y[1]]) < 0:
+                    if error == "":
+                        error += "Não há quantidade suficiente de " + y[0] + ", "
+                    else:
+                        error += y[0] + ", "
+                else:
+                    removerR[y[0]] = {'quantidade': ajuR[y[0]]["quantidade"] - int(self.escritaValorRefri[y[1]])}
+            if error != "":
+                self.escritaValorRefri = {}
+                self.escritaValorPizza = {}
+                self.originalEscritaRefri = {}
+                self.originalEscritaPizza = {}
+                self.context['frase'] = ""
+                self.total = ""
+
+            else:
+                self.fire.subtrairPizzas(removerP)
+                self.fire.subtrairRefri(removerR)
+
+                # TODO: Arrumar o watson e subtrair da base o quanto foi usado
+
+            self.context['qt'] = error
 
     def montarPedido(self):
         aux = self.context
@@ -174,7 +216,7 @@ class WatBasics:
                                                  entidade['location'][0]:entidade['location'][1]]
                 tocheck.append(int(entidade['value']))
         if checkrefri or checkpizza:
-            auxfrase = self.__respostas['input']['text'].split(" ")
+            auxfrase = self.__respostas['input']['text'].replace(',', ' ').replace('.', ' ').replace('!',' ').replace('?',' ').split(' ')
             valp = list(auxpizza.values())
             valr = list(auxrefri.values())
             valnv = list(self.auxnum.values())
@@ -285,3 +327,17 @@ class WatBasics:
                         self.total += ","
             self.context['preco'] = self.calculaPreco()
             self.context['frase'] = self.total
+
+    def adicionarEntidadePizza(self, nome):
+        return dict(self.conversation.create_value(
+            workspace_id=self.__workspace_id,
+            entity='Sabores',
+            value=nome
+        ))
+
+    def adicionarEntidadeRefri(self, nome):
+        return dict(self.conversation.create_value(
+            workspace_id=self.__workspace_id,
+            entity='Refrigerantes',
+            value=nome
+        ))

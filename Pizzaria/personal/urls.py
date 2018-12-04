@@ -28,6 +28,6 @@ urlpatterns = [
     path('checkUpdates', views.checkUpdates, name='checkUpdates'),
     path('completeOrder', views.completeOrder, name='completeOrder'),
     path('getPedido/<str:fone>', views.getPedido, name='getPedido'),
-    path('admin/getListaPedidos', views.getListaPedidos, name='getListaPedidos'),
-    path('getListaPizzas', views.getListaPizzas, name='getListaPizzas')
+    path('admingetCardapio', views.getCardapio, name='getCardapio'),
+    path('getCardapio', views.getCardapio, name='getCardapio')
 ]

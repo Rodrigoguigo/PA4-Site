@@ -1,9 +1,0 @@
-{% load static %}
-{% for chave, pizza in pizzas.items %}
-    <div class="grid-item col-md-6 col-sm-12">
-        <img src="{{ pizza.imagem }}" width="200">
-        <p class="ctitle">{{ chave }}</p>
-        <p class="ctext">{{ pizza.descricao }}</p>
-        <p class="cpreco">R$ {{ pizza.preco|floatformat:2 }}</p>
-    </div>
-{% endfor %}
